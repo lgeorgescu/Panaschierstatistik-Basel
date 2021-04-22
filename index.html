@@ -4,10 +4,8 @@
 <head lang="en">
     
     <meta charset="UTF-8">
-    <title>Direktzahlungen</title>
-    
-
-    
+    <title>Panaschierstatistik</title>
+   
     <link href="style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Einbinden der Sankey-Scripts-->
@@ -24,15 +22,15 @@
     <script src="js/d3.min.js" type="application/javascript"></script>
     <script src="js/d3v3.js" type="application/javascript"></script>
 
-
-   
 </head>
+
+
 
 <body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Direktzahlungen</h1>
-        <p class="lead">an Schweizer Bauern von 2015 bis 2019</p>
+        <h1 class="display-4">Panaschierstatistik</h1>
+        <p class="lead">der Wahl der 100 Mitglieder des Grossen Rates von Basel vom 25.10.2020</p>
       </div>
     </div>
     <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
@@ -46,16 +44,6 @@
           <!-- hier die übergeordnete Liste der Tabs -->
               <a class="nav-link active" data-toggle="tab" href="#home">Visualisierung</a>
             </li>
-          <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#bedienungsanleitung">Bedienungsanleitung</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#interpretation">Interpretation</a>
-            </li>
-          <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#lessonslearned">Lessons learned</a>
-            </li>
-
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#quellen">Quellen</a>
             </li>    
@@ -110,387 +98,36 @@
             <!-- Test select sanky inputs ende -->
 
           </form>
-
-
-
             <svg id="main"></svg>
             
         </div>
-        
-        <div id="bedienungsanleitung" class="container tab-pane fade"><br>
-            <h3 class="font-weight-lighter"> Daten- und Darstellungsauswahl</h3><br>
-            <p class="text-justify">Im Tab Visualisierung kann die Darstellungsweise, sowie das gewünschte Jahr gewählt werden. Beide Darstellungen sind interaktiv. </p><br>
-
-            <!--Accordion wrapper-->
-              <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-
-                <!-- Accordion card -->
-                <div class="card">
-
-                  <!-- Card header -->
-                  <div class="card-header" role="tab" id="headingOne1">
-                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                      aria-controls="collapseOne1">
-                      <h5 class="mb-0">
-                        Zoomable Sunburst <i class="fas fa-angle-down rotate-icon"></i>                      </h5>
-                    </a>
-                  </div>
-
-                  <!-- Card body -->
-                  <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
-                    data-parent="#accordionEx">
-                    <div class="card-body">
-                      <h5 class="mb-1">Interaktion</h5>
-                      <ul >
-                        <li>Durch Klick auf eine Kategorie, wird in die Darstellung hineingezoomt. Die Angeklickte Kategorie stellt nun die neuen 100% (ganzer Kreis) dar</li>
-                        <li>Durch Klick in die Mitte, werden die übergeordneten Kategorien sichtbar</li>
-                        <li>Es sind fünf Zoomstufen möglich, die Hierarchie ist in der folgenden Tabelle aufgeführt</li>
-                      </ul>
-                      <img src="sunburst.gif" width="300" height="300" class="mx-auto d-block">
-                      <h5 class="mb-1">Hierachie</h5>
-                      <p class="mb-4"> Der Zoomable Sunburst zeigt immer zwei Kategorien, wie die Direktzahlungen aufgeteilt werden.</p>
-                      <div class="list-group">
-                        <a class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Anbauart</h5>
-                            <small>1. Stufe</small>
-                          </div>
-                          <p class="mb-1">Konventionell, biologisch</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Betriebsart</h5>
-                            <small class="text-muted">2. Stufe</small>
-                          </div>
-                          <p class="mb-1">Ackerbau, Gemüse- / Gartenbau, Obstbau, Weinbau, Verkehrsmilch, Mutterkühe, Pferde / Schafe / Ziegen, Schweine, Geflügel, kombiniert Verkehrsmilch / Ackerbau, kombiniert Mutterkühe, Andere / Nicht zugeteilt</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Kantone</h5>
-                            <small class="text-muted">3. Stufe</small>
-                          </div>
-                          <p class="mb-1">Alle 26 Kantone der Schweiz, «unbekannt» für anonymisierte Einträge</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Gebiet</h5>
-                            <small class="text-muted">4. Stufe</small>
-                          </div>
-                          <p class="mb-1">Tal- oder Berggebiet</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Beitragskategorie</h5>
-                            <small class="text-muted">5. Stufe</small>
-                          </div>
-                          <p class="mb-1">Direktzahlungsbeiträge für: Kulturland, Versorgungssicherheit, Biodiversität, Produktionssysteme, Landschaftsqualität, Ressourceneffizienz</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <!-- Accordion card -->
-
-                <!-- Accordion card -->
-                <div class="card">
-
-                  <!-- Card header -->
-                  <div class="card-header" role="tab" id="headingTwo2">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                      aria-expanded="false" aria-controls="collapseTwo2">
-                      <h5 class="mb-0">
-                        Sankey Diagramm <i class="fas fa-angle-down rotate-icon"></i>
-                      </h5>
-                    </a>
-                  </div>
-
-                  <!-- Card body -->
-                  <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-                    data-parent="#accordionEx">
-                    <div class="card-body">
-
-                      <h5 class="mb-1">Interaktion</h5>
-                      <p class="mb-4">Das Sankey Diagramm zeigt dieselben Daten wie der Zoomable Sunburst, jedoch nur aggregiert für die gesamte Schweiz. Die Beträge sind in Tausend Franken angegeben. Zeigt die Maus auf eine Verbindung oder auf ein Element wird der entsprechende Betrag angezeigt.
-                        <br /> Es stehen zwei vordefinierte Ansichten zur Auswahl. Dies erlaubt, dass alle möglichen Verbindungen (zwischen zwei Elementen) untersucht werden können. Die einzelnen Elemente können zudem frei verschoben werden, um beispielsweise bei überlappenden Ästen die gewünschte Verbindung besser untersuchen zu können.
-                      </p>
-
-                        <div class="card">
-                          <div class="card-header">
-                        <a class="card-link" >Lesebeispiele</a>
-                      </div>
-                      <div id="Lesebeispiele" >
-                        <div class="card-body" >
-                        <h6 class="mb-1">Beispiel 1</h6>
-                          <p> In Ansicht 1 gibt es eine Verbindung zwischen Talgebeit und Versorgungssicherheit. Anhand der Breite der Verbindung kann man sehen, dass rund die Hälfte der Direktzahlungen in Talgebieten mit dem Grund Versorgungssicherheit ausbezahlt werden. </p>
-                          <img src="Lesebeispiel 1.JPG" class="img-thumbnail" alt="Talgebiet zu Versorgungssicherheit" width="300" height="225"> 
-                        <h6 class="mb-1 mt-4">Beispiel 2</h6>
-                          <p> Als zweites Beispiel nehmen wir die Verbindung Verkehrsmilch und Nicht Bio in Ansicht 1. Hier sehen wir, dass weniger als ein Fünftel der Verkehrsmilch biologisch produziert wird.</p>
-                          <img src="Lesebeispiel 2.JPG" class="img-thumbnail" alt="Talgebiet zu Versorgungssicherheit" width="300" height="225"> 
-                        </div>
 
 
-                      
-                    
-                    </div>
-                  </div>
-                </div>
-                  </div>
 
-                </div>
-                <!-- Accordion card -->
-
-                
-
-              </div>
-              <!-- Accordion wrapper -->
-        </div>
-        
-        <div id="interpretation" class="container tab-pane fade"><br>
-            <h3 class="font-weight-lighter">Interpretation</h3><br>
-              <!--Accordion wrapper-->
-              <div class="accordion md-accordion" id="accordionI" role="tablist" aria-multiselectable="true">
-
-                <!-- Accordion card -->
-                <div class="card">
-
-                  <!-- Card header -->
-                  <div class="card-header" role="tab" id="headingOne1_1">
-                    <a data-toggle="collapse" data-parent="#accordionI" href="#collapseOne1_1" aria-expanded="true"
-                      aria-controls="collapseOne1_1">
-                      <h5 class="mb-0">Aggregierte Daten<i class="fas fa-angle-down rotate-icon"></i>                      </h5>
-                    </a>
-                  </div>
-
-                  <!-- Card body -->
-                  <div id="collapseOne1_1" class="collapse" role="tabpanel" aria-labelledby="headingOne1_1"
-                    data-parent="#accordionI">
-                    <div class="card-body">
-                      <h5 class="mb-1">Vorsicht bei der Interpretation</h5>
-                      <p class="mb-1">Bei der Interpretation der Daten gilt es die folgenden Punkte zu beachten, ansonsten könnten falsche Schlussfolgerungen gezogen werden.</p>
-                      <ul >
-                        <li>Die Daten zeigen nur aggregierte Geldflüsse. Rückschlüsse auf einzelne Betriebe sowie Durchschnittswerte, wie z.B. durchschnittliche Geldbeiträge pro Betrieb, lassen sich nicht daraus ableiten. </li>
-                        <li>Wo Rückschlüsse auf einzelne Betriebe möglich wären, ist die Kantonskategorie nicht vorhanden.</li>
-                      </ul>
-                      
-                    </div>
-                  </div>
-
-                </div>
-                <!-- Accordion card -->
-
-                <!-- Accordion card -->
-                <div class="card">
-
-                  <!-- Card header -->
-                  <div class="card-header" role="tab" id="headingTwo2_1">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionI" href="#collapseTwo2_2"
-                      aria-expanded="false" aria-controls="collapseTwo2_2">
-                      <h5 class="mb-0">Die Kantone Bern & Graubünden als Profiteure?<i class="fas fa-angle-down rotate-icon"></i>
-                      </h5>
-                    </a>
-                  </div>
-
-                  <!-- Card body -->
-                  <div id="collapseTwo2_2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2_2"
-                    data-parent="#accordionI">
-                    <div class="card-body">
-                      Die Kantone Graubünden und Bern fallen immer wieder mit hohen Direktzahlungsbeiträgen auf. Sind sie im Vorteil gegenüber den anderen Kantonen? 
-                      <ul>
-                        <li>Diese Frage kann mit den vorhandenen Daten nicht abschliessend beurteilt werden. In den Daten fehlen Informationen zu der Anzahl Betrieben pro Kanton und auch zu den Betrieben, die keine Subventionen erhalten haben.
-                          Ein Vergleich zu anderen Kantonen ist deshalb nur absolut mit den aufsummierten Direktzahlungen möglich. 
-                        </li>
-                        <li>Ein relativer Vergleich der Kantone ist auf Basis der vorhandnen Daten nicht möglich.</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                </div>
-                <!-- Accordion card -->
-
-                <!-- Accordion card -->
-                <div class="card">
-
-                  <!-- Card header -->
-                  <div class="card-header" role="tab" id="headingTwo3_3">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionI" href="#collapseTwo3_3"
-                      aria-expanded="false" aria-controls="collapseTwo3_3">
-                      <h5 class="mb-0">Biologische Landwirtschaft im Aufwind<i class="fas fa-angle-down rotate-icon"></i>
-                      </h5>
-                    </a>
-                  </div>
-
-                  <!-- Card body -->
-                  <div id="collapseTwo3_3" class="collapse" role="tabpanel" aria-labelledby="headingTwo3_3"
-                    data-parent="#accordionI">
-                    <div class="card-body">
-                      In der Sunburst-Darstellung ist als erste Stufe die Art der Landwirtschaft ausgewiesen, hier wird unterschieden zwischen biologischer und konventioneller Landwirtschaft.  
-                      <ul>
-                      <li>
-                        Der Anteil der ausbezahlten Direktzahlungen an die biologisch wirtschaftenden Betriebe ist relativ gering. 2015 beträgt er 17%.
-                        Auch betragsmässig steigt die Summe von 0.41 auf 0.53 Mrd. Franken an. 
-                      </li>
-                      <li>
-                        Der Anteil der ausbezahlten Direktzahlungen an biologisch wirtschaftende Betriebe steigt von 2015 bis 2019 von 15 % auf 21% an. 
-                      </li>
-                      <li>
-                        Dieser Anstieg könnte mit der vermehrten Nachfrage nach biologischen Produkten zu tun haben.
-                      </li> 
-                    </ul>
-
-                    </div>
-                  </div>
-
-                </div>
-                <!-- Accordion card -->
-
-                <div class="card">
-
-                  <!-- Card header -->
-                  <div class="card-header" role="tab" id="headingTwo4_4">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionI" href="#collapseTwo4_4"
-                      aria-expanded="false" aria-controls="collapseTwo4_4">
-                      <h5 class="mb-0">Unterschiedliche kantonale Verteilung der Beiträge für Berg- und Talgebiete<i class="fas fa-angle-down rotate-icon"></i>
-                      </h5>
-                    </a>
-                  </div>
-
-                  <!-- Card body -->
-                  <div id="collapseTwo4_4" class="collapse" role="tabpanel" aria-labelledby="headingTwo4_4"
-                    data-parent="#accordionI">
-                    <div class="card-body">
-                      Die Direktzahlungen für Tal- und Berggebiete verteilen sich schweizweit ungefähr zu gleichen Teilen (siehe Sankey-Diagramm). Das Verhältnis der einzelnen Beiträge variiert in verschiedenen Betriebskategorien über die Kantone hinweg aber sehr stark. Dies zeigt sich bei der Betrachtung des Zoomable Sunbursts.   
-                      <ul>
-                      <li>
-                        Ein Grund für diese Variation ist die unterschiedliche topographische Beschaffenheit der Kantone. So hat z.B. der Kanton Glarus einen hohen Anteil an Berggebieten, die Beiträge an die Berggebiete fallen sehr hoch aus. 
-                      </li>
-                      
-                    </ul>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-              <!-- Accordion wrapper -->
-
-        </div>
-                
-        <div id="lessonslearned" class="container tab-pane fade"><br>
-              <h3 class="font-weight-lighter"> Datenaufbereitung wird unterschätzt</h3><br>  
-              <!--Accordion wrapper-->
-                <div class="accordion md-accordion" id="accord_lesslearn" role="tablist" aria-multiselectable="true">
-  
-                  <!-- Accordion card -->
-                  <div class="card">
-  
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="llheading1">
-                      <a data-toggle="collapse" data-parent="#accord_lesslearn" href="#ll1" aria-expanded="true"
-                        aria-controls="ll1">
-                        <h5 class="mb-0">
-                          Zoomable Sunburst <i class="fas fa-angle-down rotate-icon"></i>                      </h5>
-                      </a>
-                    </div>
-  
-                    <!-- Card body -->
-                    <div id="ll1" class="collapse" role="tabpanel" aria-labelledby="llheading1"
-                      data-parent="#accord_lesslearn">
-                      <div class="card-body">
-                        <h5 class="mb-1">Zoomable Sunburst - Umsetzung durch Jan</h5>
-                        <p>Die Direktzahlungsdaten lagen in Ursprungsform als Excel vor. 
-                          Für den Zoomable Sunburst mussten sie aufwendig aufbereitet und in ein JSON umgewandelt werden. 
-                          Dies erforderte unter anderem die Hierarchisierung, sowie die Aggregation (Summenangaben in den Labels) der Daten. 
-                          Gelöst wurde das Ganze mit einem Python-Skript, welches in der 
-                          <a target="_blank" href="https://github.com/lukasoester/Direktzahlungen">Github-Repository</a> 
-                          eingesehen werden kann. 
-                          Vor allem die Erstellung der hierarchischen Datenstruktur hat sich als sehr aufwendig erwiesen.</p>
-                      </div>
-                    </div>
-  
-                  </div>
-                  <!-- Accordion card -->
-  
-                  <!-- Accordion card -->
-                  <div class="card">
-  
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="llheading2">
-                      <a class="collapsed" data-toggle="collapse" data-parent="#accord_lesslearn" href="#ll2"
-                        aria-expanded="false" aria-controls="collapseTwo2">
-                        <h5 class="mb-0">
-                          Sankey Diagramm <i class="fas fa-angle-down rotate-icon"></i>
-                        </h5>
-                      </a>
-                    </div>
-  
-                    <!-- Card body -->
-                    <div id="ll2" class="collapse" role="tabpanel" aria-labelledby="llheading2"
-                      data-parent="#accord_lesslearn">
-                      <div class="card-body">
-                        <h5 class="mb-1">Sankey-Diagramm - Umsetzung durch Lukas</h5>
-
-                        Die Daten wurden mit Hilfe von Excel neu strukturiert und schlussendlich direkt im Java-Script-File integriert. Die Umstrukturierung war aufwendig und zeitintensiv.
-                        
-                      </div>
-                    </div>
-  
-                  </div>
-                  <!-- Accordion card -->
-  
-                  
-  
-                </div>
-                <!-- Accordion wrapper -->
-         
-            
-        
-        </div>
-        
-        
+        <!--Quellen-Seite-->>
         <div id="quellen" class="container tab-pane fade"><br>
           <h5 class="font-weight-lighter">Rohdaten </h5>
-          <p>Die Daten stammen vom Bundesamt für Landwirtschaft (BLW) und können in Rohform
-            <a href="/data/200318_data_raw_BLW.xlsx" download>hier</a>
+          <p>Die Daten stammen von der Fachstelle für OGD Basel-Stadt und können in Rohform
+            <!--Hier evtl automatischer Download und nicht Link zur Seite-->
+            <a href="https://data.bs.ch/explore/dataset/100101/export/?disjunctive.wahlkreisbezeichnung&disjunctive.parteikurzbezeichnung&disjunctive.parteibezeichnung&disjunctive.ganzer_name&disjunctive.jahrgang&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiU1VNIiwieUF4aXMiOiJhbnphaGxfc2l0emUiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjMDA3NTdFIn1dLCJ4QXhpcyI6InBhcnRlaWt1cnpiZXplaWNobnVuZyIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiJzZXJpZTEtMSIsImNvbmZpZyI6eyJkYXRhc2V0IjoiMTAwMTAxIiwib3B0aW9ucyI6eyJkaXNqdW5jdGl2ZS53YWhsa3JlaXNiZXplaWNobnVuZyI6dHJ1ZSwiZGlzanVuY3RpdmUucGFydGVpa3VyemJlemVpY2hudW5nIjp0cnVlLCJkaXNqdW5jdGl2ZS5wYXJ0ZWliZXplaWNobnVuZyI6dHJ1ZSwiZGlzanVuY3RpdmUuZ2FuemVyX25hbWUiOnRydWUsImRpc2p1bmN0aXZlLmphaHJnYW5nIjp0cnVlfX19XSwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZSwidGltZXNjYWxlIjoiIn0%3D" download>hier</a>
             heruntergeladen werden.
              Für die Darstellungen wurden die Daten aufbereitet. 
-            Für den Zoomable Sunburst wurde dies mithilfe eines Python-Skripts erledigt 
-            (<a target="_blank" href="https://github.com/lukasoester/Direktzahlungen">siehe Github-Repository</a>).
           </p>
           <p>
-            Die Erläuterungen zu den einzelnen Dirketzahlungsbeitragskategorien sind hier verlinkt: 
-            <ul class="nobull">
-              <li><a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/direktzahlungen/kulturlandschaftsbeitraege.html">Beitrag Kulturland</a></li>
-              <li><a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/direktzahlungen/versorgungssicherheitsbeitraege.html">Beitrag Versorgungssicherheit</a></li>
-              <li><a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/direktzahlungen/biodiversitaetsbeitraege.html">Beitrag Biodiversität</a></li>
-              <li><a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/direktzahlungen/produktionssystembeitraege.html">Beitrag Produktionssysteme</a></li>
-              <li><a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/direktzahlungen/landschaftsqualitaetsbeitrag.html">Beitrag Landschaftsqualität</a></li>
-              <li><a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/direktzahlungen/ressourceneffizienzbeitraege.html">Beitrag Ressourceneffizienz</a></li>
-
-
-            </ul>
-          </p>
-          <p>
-            Das verwendete Titelbild stammt von der <a target="_blank" href="https://www.blw.admin.ch/blw/de/home/instrumente/laendliche-entwicklung-und-strukturverbesserungen.html">BLW-Website</a>.
+            Das verwendete Titelbild stammt von der <a target="_blank" href="https://data.bs.ch/pages/home/">Website des Datenportals Basel-Stadt</a>.
           </p>
 
           <h5 class="font-weight-lighter">Entwicklung der Website</h5>
+          <p> Das Gerüst der Website wurde vom Open-Data-Projekt von Lukas Oester und Jan Liechti übernommen. Ihre App findet sich unter folgendem <a target="_blank" href="https://direktzahlungen-ch-bauern.opendata.iwi.unibe.ch/">Link</a>.</p>
           <p>
-            Der gesamte Code befindet sich frei zugänglich auf einer <a target="_blank" href="https://github.com/lukasoester/Direktzahlungen">Github-Repository</a>.
+            Der gesamte Code befindet sich frei zugänglich auf einer <a target="_blank" href="https://github.com/lgeorgescu/Panaschierstatistik-Basel">Github-Repository</a>.
           </p>
           <p>
             Für die Entwicklung dieser Website wurden folgenden Programmiersprachen und Softwarepakete verwendet:
           </p>
           <ul> 
             <li>
-              Python 3.6 für die Datenaufbereitung 
-            </li>
-            <li>
               JavaScript für die Apps
-            </li>
-            <li>
-              D3.js v5 für den Zoomable Sunburst 
             </li>
             <li>
               D3.js v3 für das Sankey-Diagramm
@@ -503,6 +140,8 @@
               <a target="_blank" href="http://bl.ocks.org/timelyportfolio/79350d7475a5709b051e">basecode</a>)
             </li>
           </ul>
+
+          <!--Kontakt-->
           <h5 class="font-weight-lighter">Autorin </h5>
 
           <div class="row">
@@ -527,6 +166,8 @@
         </div>
 
     
+
+    <!-- Page footer -->
     <footer class="page-footer background-blue font-small blue">
             <div class="footer-copyright text-center py-3"> 
                  Copyright: © Creative Commons Namensnennung 4.0 International Lizenz
