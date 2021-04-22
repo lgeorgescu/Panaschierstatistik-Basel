@@ -1,0 +1,11 @@
+{
+"title": "Direktzahlungen an die Schweizer Bauern",
+"description": "Visualisierung der Finzanzströme an die Schweizer Bauern.",
+"authors": [
+    {"name": "Lukas Oester", "email": "lukas.oester@students.unibe.ch"},
+    {"name": "Jan Liechti", "email": "jan.liechti1@students.unibe.ch"}
+],
+"date": "2020-05-28",
+"category": "Finanzen",
+"software_license": "CC BY 4.0"
+}

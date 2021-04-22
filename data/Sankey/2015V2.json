@@ -1,0 +1,15 @@
+{
+    "dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+        "source":["Kulturland","Versorgungssicherheit","Biodiversität","Produktionssysteme","Landschaftsqualität","Ressourceneffizienz","Kulturland","Versorgungssicherheit","Biodiversität","Produktionssysteme","Landschaftsqualität","Ressourceneffizienz","Bio","Bio","Nicht Bio","Nicht Bio","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Berggebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet","Talgebiet"],
+        "target":["Bio","Bio","Bio","Bio","Bio","Bio","Nicht Bio","Nicht Bio","Nicht Bio","Nicht Bio","Nicht Bio","Nicht Bio","Berggebiet","Talgebiet","Berggebiet","Talgebiet","Ackerbau","Andere/Nicht zugeteilt","Geflügel","Gemüse- /Gartenbau","Kombiniert Mutterkühe","Kombiniert Verkehrsmilch/Ackerbau","Mutterkühe","Obstbau","Pferde/Schafe/Ziegen","Schweine","Verkehrsmilch","Weinbau","Ackerbau","Andere/Nicht zugeteilt","Geflügel","Gemüse- /Gartenbau","Kombiniert Mutterkühe","Kombiniert Verkehrsmilch/Ackerbau","Mutterkühe","Obstbau","Pferde/Schafe/Ziegen","Schweine","Verkehrsmilch","Weinbau"],
+        "value":[83424,138096,69747,100805,20757,1945,296996,950417,288136,346288,93911,15167,288824,125949,855855,1135060,414,179856,6554,31,4061,3317,158216,931,82725,11776,689121,7676,136757,478288,8304,26043,73352,166562,57132,12933,27825,16630,225371,31812]
+     },
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "tausend CHF"
+    }
