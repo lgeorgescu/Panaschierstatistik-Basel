@@ -55,45 +55,28 @@
         <!-- hier folgt der Inhalt der Nav-Tabs-->
         
         
-
         <div id="home" class="container tab-pane active"><br>
-          <h1 id="header_app">BLW Verteilung Subventionen</h1>
+          <h1 id="header_app">Stimmen veränderter Wahlzettel</h1>
+
           <form>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id='sunburst' class="font-weight-normal" onchange="updateData()" checked>Zoomable Sunburst
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id='sankey' class="font-weight-normal" onchange="updateData()">Sankey Diagramm
-            </label>
-          </form>
-          <form>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="jahr_2015" checked class="font-weight-normal" onchange="updateData()"> Daten 2015 
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="jahr_2016" class="font-weight-normal" onchange="updateData()" > Daten 2016 
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="jahr_2017" class="font-weight-normal" onchange="updateData()" > Daten 2017 
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="jahr_2018" class="font-weight-normal" onchange="updateData()" > Daten 2018 
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="jahr_2019" class="font-weight-normal" onchange="updateData()" > Daten 2019 
-            </label>
+            <input type="radio"  name="optradio" id='gesamt'  onchange="updateData()" checked> Gesamt 
+            <input type="radio"  name="optradio" id='abfluss' onchange="updateData()" > Abfluss 
+            <input type="radio"  name="optradio" id='zufluss' onchange="updateData()" > Zufluss 
           </form>
 
-          <!-- Test select sanky inputs start -->
+          <form id="parteiliste" onchange="updateData()">
+            <select>
+              <option id="svp">SVP</option>
+              <option id="fdp">FDP</option>
+              <option id="glp">GLP</option>
+              <option id="sp">SP</option>
+              <option id="gd">GD</option>
+              <option id="ldp">LDP</option>
+              <option id="cvp">CVP</option>
+              <option id="evp">EVP</option>
 
-          <form id="sanky_input">
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="V1" checked class="font-weight-normal" title="Gebiet -> Fond -> Typ -> Bio" onchange="updateData()"> Ansicht 1                          
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="optradio" id="V2" class="font-weight-normal" title="Fond -> Bio -> Gebiet -> Typ" onchange="updateData()" > Ansicht 2
-            </label>
-
+            </select>
+          </form>
 
             <!-- Test select sanky inputs ende -->
 
@@ -175,7 +158,7 @@
             </div>
     </footer>
   
-        <script src="js/app_3.js" type="application/javascript"></script>
+        <script src="js/app_Lena.js" type="application/javascript"></script>
 
 
 </body>

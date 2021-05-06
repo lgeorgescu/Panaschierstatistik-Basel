@@ -2,10 +2,10 @@
 function updateData(){
 
 	//Get Data from 2015
-	if(document.getElementById("jahr_2015").checked) {
+	if(document.getElementById("fdp").selected) {
 		var path_data = "data/json_data_2015.json"
 		d3.select("#header_app")
-			.text("Direktzahlungen Jahr 2015");
+			.text("Test");
 			
 		//Get Data for Sankey Version 1
 		if(document.getElementById("V1").checked) {
@@ -133,7 +133,15 @@ function updateData(){
 		draw_sankey(params);
 		document.getElementById("sanky_input").style.visibility="visible"; // Show extra Button for Sankey
 	}
+	if(document.getElementById("gesamt").checked){
+		document.getElementById("parteiliste").style.visibility="hidden";
+	}
+	if(!document.getElementById("gesamt").checked){
+		document.getElementById("parteiliste").style.visibility="visible";
+	}
+
 }
+
 
 	
 
