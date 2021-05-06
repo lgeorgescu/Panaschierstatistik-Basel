@@ -1,6 +1,17 @@
-//source : https://jsfiddle.net/qo1vwL6k/1/
+
 function updateData(){
-	//Get Data for FDP
+
+	//Get data for overview
+	if(document.getElementById("gesamt").checked) {
+			d3.select("#header_app").text("Stimmen verändertet Wahlzettel");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2016V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+				
+	};
+
+	//Get data for FDP
 	if(document.getElementById("fdp").selected) {	
 		
 		if(document.getElementById("abfluss").checked) {
@@ -21,7 +32,154 @@ function updateData(){
 		};					   
 	};
 
-	
+	//Get data for SVP
+	if(document.getElementById("svp").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der SVP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die SVP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
+
+	//Get data for GLP
+	if(document.getElementById("glp").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der GLP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die GLP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
+	//Get data for EVP
+	if(document.getElementById("evp").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der EVP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die EVP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
+	//Get data for LDP
+	if(document.getElementById("ldp").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der LDP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die LDP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
+	//Get data for LDP
+	if(document.getElementById("cvp").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der CVP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die CVP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
+	//Get data for GD
+	if(document.getElementById("gd").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der GD an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die GD");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
+	//Get data for SP
+	if(document.getElementById("sp").selected) {	
+		
+		if(document.getElementById("abfluss").checked) {
+			d3.select("#header_app").text("Stimmen der SP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("zufluss").checked) {
+			d3.select("#header_app").text("Stimmen der Parteien an die SP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+
 	var tmp = d3.select("#main");
 	tmp.selectAll("*").remove();
 	var tmp_2 = d3.select('#Sankey-Chart')
