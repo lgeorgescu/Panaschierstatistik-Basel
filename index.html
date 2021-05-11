@@ -25,7 +25,6 @@
 </head>
 
 
-
 <body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -63,7 +62,7 @@
             <input type="radio"  name="optradio" id='abfluss' onchange="updateData()" > Abfluss 
             <input type="radio"  name="optradio" id='zufluss' onchange="updateData()" > Zufluss 
           </form>
-
+          <br>
           <form id="parteiliste" onchange="updateData()">
             <select>
               <option id="svp">SVP</option>
@@ -78,9 +77,16 @@
             </select>
           </form>
 
-            <!-- Test select sanky inputs ende -->
+          <br>
 
+          <p>Fluss innerhalb einer Partei anzeigen</p>
+          <form id="parteiIntern">
+          <label class="switch"> 
+          <input type="checkbox" id="eigenePartei" onchange="updateData()"checked>
+          <span class="slider round"></span>
+          </label>
           </form>
+          
             <svg id="main"></svg>
             
         </div>
@@ -130,7 +136,7 @@
           <div class="row">
               <div class="column">
                 <div class="card">
-                  <img src="Portait.jpg" alt="Jan" style="width:100%">
+                  <img src="Portrait.jpg" alt="Jan" style="width:100%">
                   <div class="container">
                     <h2>Lena Georgescu</h2>
                     <p class="title">BSc Informatik</p>

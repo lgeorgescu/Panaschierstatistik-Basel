@@ -3,12 +3,22 @@ function updateData(){
 
 	//Get data for overview
 	if(document.getElementById("gesamt").checked) {
+
 			d3.select("#header_app").text("Stimmen verändertet Wahlzettel");
+
+			if(document.getElementById("eigenePartei").checked){
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Sankey/2016V2.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-				
+			}
+
+			if(!document.getElementById("eigenePartei").checked){
+				var request = new XMLHttpRequest();
+				request.open("GET","/data/Sankey/2016V1.json", false);
+				request.send(null);
+				var params = JSON.parse(request.responseText);
+				}			
 	};
 
 	//Get data for FDP
@@ -215,7 +225,7 @@ function draw_sankey(params){
 	   
 	   //hard code these now but eventually make available
 	   var formatNumber = d3v3.format("0,.0f"),    // zero decimal places
-		   format = function(d) { return formatNumber(d) + units; },
+		   format = function(d) { return formatNumber(d) + units; },   
 		   color = d3v3.scale.category10();
 	   
 	   if(params.labelFormat){
