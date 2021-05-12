@@ -58,11 +58,20 @@
           <h1 id="header_app">Stimmen veränderter Wahlzettel</h1>
 
           <form>
-            <input type="radio"  name="optradio" id='gesamt'  onchange="updateData()" checked> Gesamt 
-            <input type="radio"  name="optradio" id='abfluss' onchange="updateData()" > Abfluss 
-            <input type="radio"  name="optradio" id='zufluss' onchange="updateData()" > Zufluss 
+            <input type="radio"  name="optradio" id='gesamt'  onchange="updateData()" checked> Alle Parteien 
+            <input type="radio"  name="optradio" id='einzelne_parteien' onchange="updateData()" > Einzelne Parteien 
+            <input type="radio"  name="optradio" id='wahlkreise' onchange="updateData()" > Wahlkreise
+            <input type="radio"  name="optradio" id='gewählte' onchange="updateData()" > Gewählte Personen
           </form>
           <br>
+          <form id="achsen" onchange="updateData()">
+            <select>
+              <option id="links">linke Achse</option>
+              <option id="rechts">rechte Achse</option>
+            </select>
+          </form>
+          <br>
+
           <form id="parteiliste" onchange="updateData()">
             <select>
               <option id="svp">SVP</option>
@@ -73,7 +82,34 @@
               <option id="ldp">LDP</option>
               <option id="cvp">CVP</option>
               <option id="evp">EVP</option>
-
+            </select>
+          </form>
+          <br>
+          <!--ergänzen-->
+          <form id="wahlkreisliste" onchange="updateData()">
+            <select>
+              <option id="riehen">Riehen</option>
+              <option id="fdp">FDP</option>
+              <option id="glp">GLP</option>
+              <option id="sp">SP</option>
+              <option id="gd">GD</option>
+              <option id="ldp">LDP</option>
+              <option id="cvp">CVP</option>
+              <option id="evp">EVP</option>
+            </select>
+          </form>
+          <br>
+          <!--ergänzen-->
+          <form id="gewähltenliste" onchange="updateData()">
+            <select>
+              <option id="riehen">Xaver Dill</option>
+              <option id="fdp">FDP</option>
+              <option id="glp">GLP</option>
+              <option id="sp">SP</option>
+              <option id="gd">GD</option>
+              <option id="ldp">LDP</option>
+              <option id="cvp">CVP</option>
+              <option id="evp">EVP</option>
             </select>
           </form>
 
