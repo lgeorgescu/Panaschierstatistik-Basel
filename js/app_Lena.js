@@ -393,6 +393,4 @@ function draw_sankey(params){
 		   })
 	};
 
-
-
 updateData();
