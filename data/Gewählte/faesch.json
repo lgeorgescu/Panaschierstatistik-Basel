@@ -1,0 +1,16 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP", "SVP"],
+                "target":["Faesch, Lukas","Faesch, Lukas","Faesch, Lukas","Faesch, Lukas","Faesch, Lukas","Faesch, Lukas","Faesch, Lukas","Faesch, Lukas","Faesch, Lukas"],
+                "value": [161	,92	,	732,	8	,49,	18	,9	,29	,29]
+                
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

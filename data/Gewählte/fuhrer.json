@@ -1,0 +1,16 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael","Fuhrer, Raphael"],
+                "value": [310	,9	,	26	,19	,735,	14	,1418,	76,	3
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

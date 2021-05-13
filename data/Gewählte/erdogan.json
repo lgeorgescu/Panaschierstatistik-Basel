@@ -1,0 +1,17 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit","Erdogan, Seyit"
+                ],
+                "value": [255,	29	,	23,	12,	2436	,12	,167,	47,	3
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

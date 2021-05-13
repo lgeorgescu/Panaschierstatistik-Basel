@@ -1,0 +1,16 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"PB",	"KL"],
+                "target":["Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie","Eymann, Stephanie" ],
+                "value": [600,	200	,3	,851,	17,	119	,133	,24	,74,	166,	2,	12	,		5,	3]
+                
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

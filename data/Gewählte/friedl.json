@@ -1,0 +1,16 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP","FUK","PB",	"KL"],
+                "target":["Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald","Friedl, Harald"],
+                "value": [128,	7	,12,	8	,7,	283,	5,	1000,	34,	8	,5,		5,	12]
+                
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

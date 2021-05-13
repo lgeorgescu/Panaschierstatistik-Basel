@@ -28,7 +28,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der FDP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -37,7 +37,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die FDP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -49,7 +49,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der SVP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -58,7 +58,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die SVP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -71,7 +71,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der GLP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -80,7 +80,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die GLP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -92,7 +92,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der EVP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -101,7 +101,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die EVP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -113,7 +113,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der LDP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -122,7 +122,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die LDP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -134,7 +134,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der CVP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -143,7 +143,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die CVP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -155,7 +155,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der GD an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -164,7 +164,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die GD");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -176,7 +176,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der SP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V1.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -185,7 +185,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die SP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2015V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -319,7 +319,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};	
-		//neue
+		
 		
 		if(document.getElementById("christ").selected) {
 			d3.select("#header_app").text("Veränderte Stimmen an Tobias Christ");
@@ -359,7 +359,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/eichner-guth.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};/*
+		};
 		if(document.getElementById("erdogan").selected) {
 			d3.select("#header_app").text("Veränderte Stimmen an Seyit Erdogan");
 			var request = new XMLHttpRequest();
@@ -394,7 +394,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/fuhrer.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};	*/	
+		};		
 				   
 	}
 	//Gewählte fertig
