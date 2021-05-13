@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"	,"PB"],
+			"target":["Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat","Braun-Gallacchi, Beat"],
+			"value": [296	,369,	2	,253,	1,	40	,74	,10	,26	,79, 1]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }

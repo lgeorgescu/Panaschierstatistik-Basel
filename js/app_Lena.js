@@ -243,7 +243,82 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};	
-						   
+
+		if(document.getElementById("battaglia").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Olivier Battaglia");
+		};	
+
+		if(document.getElementById("baumgartner").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Beda Baumgartner");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/baumgartner.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("bernasconi").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Patrizia Bernasconi");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/bernasconi.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("bocherens").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an François Bocherens");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/bocherens.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("bolliger").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Oliver Bolliger");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/bolliger.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("bothe-wenk").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Sandra Bothe-Wenk");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/bothe-wenk.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("brandenburger").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Jessica Brandenburger");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/brandenburger.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("braun-gallacchi").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Beat Braun-Gallacchi");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/braun-gallacchi.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("brigger").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an René Brigger");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/brigger.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("bucher").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Erich Bucher");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/bucher.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
 	}
 	//Gewählte fertig
 
@@ -252,6 +327,9 @@ function updateData(){
 	var tmp_2 = d3.select('#Sankey-Chart')
 	tmp_2.selectAll("*").remove();
 	
+	document.getElementById("battagliatext").style.visibility="hidden";
+	if (document.getElementById("battaglia").selected) {document.getElementById("battagliatext").style.visibility="visible";}
+
 	if(document.getElementById("gesamt").checked){
 		document.getElementById("parteiliste").style.visibility="hidden";
 		document.getElementById("achsen").style.visibility="hidden";

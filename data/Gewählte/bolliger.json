@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+			"target":["Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver","Bolliger, Oliver"],
+			"value": [300,	11	,	11,	2	,569	,5	,1311	,30,	7]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }

@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+			"target":[ "Bocherens, François", "Bocherens, François", "Bocherens, François", "Bocherens, François", "Bocherens, François", "Bocherens, François", "Bocherens, François", "Bocherens, François", "Bocherens, François" ],
+			"value": [380	,137,994	,29	,82,68,	14	,57	,155]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }

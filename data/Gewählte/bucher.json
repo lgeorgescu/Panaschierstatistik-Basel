@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+			"target":["Bucher, Erich","Bucher, Erich","Bucher, Erich","Bucher, Erich","Bucher, Erich","Bucher, Erich","Bucher, Erich","Bucher, Erich","Bucher, Erich"],
+			"value": [315	,588,	332	,16,	58,	59,	9	,75	,88]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }

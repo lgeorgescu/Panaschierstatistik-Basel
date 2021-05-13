@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB",	"KL"],
+			"target":["Baumgartner, Beda", "Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda","Baumgartner, Beda"],
+			"value": [194,	4,	8,	7,	6,	1579,	5,	218,	36,	1,	8,		5,	9]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }

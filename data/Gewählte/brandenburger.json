@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"FUK",	"PB",	"KL"],
+			"target":["Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica","Brandenburger, Jessica"],
+			"value": [272	,6,	8,	9,	6,	1568,	6,	309,	23	,5	,1	,11]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }
