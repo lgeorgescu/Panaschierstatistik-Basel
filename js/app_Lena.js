@@ -8,14 +8,14 @@ function updateData(){
 
 			if(document.getElementById("eigenePartei").checked){
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Sankey/2016V2.json", false);
+			request.open("GET","/data/Gesamt/gesamt.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 			}
 
 			if(!document.getElementById("eigenePartei").checked){
 				var request = new XMLHttpRequest();
-				request.open("GET","/data/Sankey/2016V1.json", false);
+				request.open("GET","/data/Sankey/Test.json", false);
 				request.send(null);
 				var params = JSON.parse(request.responseText);
 				}			
@@ -217,6 +217,7 @@ function updateData(){
 		document.getElementById("achsen").style.visibility="hidden";
 		document.getElementById("wahlkreisliste").style.visibility="hidden";
 		document.getElementById("gewähltenliste").style.visibility="hidden";
+		document.getElementById("parteiIntern").style.visibility="visible";
 	}
 	
 	if(document.getElementById("einzelne_parteien").checked){
@@ -224,6 +225,7 @@ function updateData(){
 		document.getElementById("achsen").style.visibility="visible";
 		document.getElementById("wahlkreisliste").style.visibility="hidden";
 		document.getElementById("gewähltenliste").style.visibility="hidden";
+		document.getElementById("parteiIntern").style.visibility="visible";
 	}
 
 	if(document.getElementById("wahlkreise").checked){
@@ -231,12 +233,14 @@ function updateData(){
 		document.getElementById("achsen").style.visibility="hidden";
 		document.getElementById("wahlkreisliste").style.visibility="visible";
 		document.getElementById("gewähltenliste").style.visibility="hidden";
+		document.getElementById("parteiIntern").style.visibility="visible";
 	}
 	if(document.getElementById("gewählte").checked){
 		document.getElementById("parteiliste").style.visibility="hidden";
 		document.getElementById("achsen").style.visibility="hidden";
 		document.getElementById("wahlkreisliste").style.visibility="hidden";
 		document.getElementById("gewähltenliste").style.visibility="visible";
+		document.getElementById("parteiIntern").style.visibility="hidden";
 	}
 
 

@@ -1,0 +1,15 @@
+{
+    "dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+        "source":["Knoten 1", "Knoten 1", "Knoten 2"],
+        "target":["Knoten 3" , "Knoten 4" , "Knoten 4"],
+        "value":[10,20,     30]
+     },
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Fettlis"
+    }
