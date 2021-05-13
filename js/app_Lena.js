@@ -218,6 +218,23 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};	
+
+
+		if(document.getElementById("amacher").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Nicole Amacher");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/amacher.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+
+		if(document.getElementById("amiet").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Lorenz Amiet");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/amiet.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
 						   
 	}
 	//Gewählte fertig

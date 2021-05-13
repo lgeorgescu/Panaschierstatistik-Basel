@@ -1,0 +1,16 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GLP",	"SVP",		"PB"],
+			"target":["Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz","Amiet, Lorenz" ],
+			"value": [157	,63	,	75	,4	,10,	9,		16,	455,				7	]
+
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }
