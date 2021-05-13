@@ -1,0 +1,16 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne", "FDP", "LDP", "EVP", "SP", "CVP", "GB", "GLP", "SVP"],
+			"target":["Alioth, Catherine","Alioth, Catherine","Alioth, Catherine","Alioth, Catherine","Alioth, Catherine","Alioth, Catherine","Alioth, Catherine","Alioth, Catherine","Alioth, Catherine"],
+			"value": [451	,146		,1563	,9			,149 	,55		  ,29		,	94,	61]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }
+	

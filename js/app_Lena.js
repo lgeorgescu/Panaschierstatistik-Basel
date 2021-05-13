@@ -201,10 +201,25 @@ function updateData(){
 	//Wahlkreise fertig
 
 	if(document.getElementById("gewählte").checked) {	
+
+
+		if(document.getElementById("albietz").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Daniel Albietz");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/albietz.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
 		
-		d3.select("#header_app").text("Gewählte Personen");
+		if(document.getElementById("alioth").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Catherine Alioth");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/alioth.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
 						   
-	};
+	}
 	//Gewählte fertig
 
 	var tmp = d3.select("#main");

@@ -1,0 +1,15 @@
+{
+"dom": "Sankey-Chart",
+    "width":    960, 
+    "height":    500, 
+    "data": {
+			"source":["Ohne", "FDP", "LDP", "EVP", "SP", "CVP", "GB", "GLP", "SVP"],
+			"target":["Albietz, Daniel","Albietz, Daniel","Albietz, Daniel","Albietz, Daniel","Albietz, Daniel","Albietz, Daniel","Albietz, Daniel","Albietz, Daniel","Albietz, Daniel"],
+			"value": [438	,44		, 58  ,188	 ,15	,196  ,5	,8		,59]
+	},
+    "nodeWidth":     15,
+    "nodePadding":     10,
+    "layout":     32,
+    "id": "main", 
+    "units" : "Stimmen"
+    }
