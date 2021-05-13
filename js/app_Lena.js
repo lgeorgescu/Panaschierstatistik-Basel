@@ -235,6 +235,14 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};	
+
+		if(document.getElementById("auderset").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an André Auderset");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/auderset.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
 						   
 	}
 	//Gewählte fertig
