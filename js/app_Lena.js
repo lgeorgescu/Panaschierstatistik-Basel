@@ -15,7 +15,7 @@ function updateData(){
 
 			if(!document.getElementById("eigenePartei").checked){
 				var request = new XMLHttpRequest();
-				request.open("GET","/data/Sankey/Test.json", false);
+				request.open("GET","/data/Gesamt/gesamt_ohne_eigene.json", false);
 				request.send(null);
 				var params = JSON.parse(request.responseText);
 				}			
