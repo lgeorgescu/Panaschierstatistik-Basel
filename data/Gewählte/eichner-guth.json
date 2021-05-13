@@ -1,0 +1,17 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB"],
+                "target":["Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark","Eichner-Guth, Mark"],
+                "value": [247	,373,	2	,214,	7	,39	,31,	9	,18	,64,	1		,		6
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }
+        

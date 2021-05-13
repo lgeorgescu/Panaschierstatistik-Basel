@@ -318,7 +318,84 @@ function updateData(){
 			request.open("GET","/data/Gewählte/bucher.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};					   
+		};	
+		//neue
+		
+		if(document.getElementById("christ").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Tobias Christ");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/christ.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("cuenod").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Tim Cuénod");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/cuenod.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("dill").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Alexandra Dill");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/dill.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("ebi").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Alex Ebi");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/ebi.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		
+		if(document.getElementById("eichner-guth").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Mark Eichner-Guth");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/eichner-guth.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};/*
+		if(document.getElementById("erdogan").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Seyit Erdogan");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/erdogan.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("eymann").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Stephanie Eymann");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/eymann.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("faesch").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Lukas Faesch");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/faesch.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("friedl").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Harald Friedl");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/friedl.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("fuhrer").selected) {
+			d3.select("#header_app").text("Veränderte Stimmen an Raphael Fuhrer");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/fuhrer.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	*/	
+				   
 	}
 	//Gewählte fertig
 
