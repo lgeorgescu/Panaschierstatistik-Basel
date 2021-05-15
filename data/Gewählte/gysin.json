@@ -3,9 +3,9 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP", "SVP"],
+                "target":["Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte","Gysin, Brigitte"],
+                "value": [152,	32	,	62	,388,	99	,32,	15	,34,	27]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

@@ -410,7 +410,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/furlano.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};	/*
+		};	
 		if(document.getElementById("gallacchi").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel Pasqualine Gallacchi (CVP)");
 			var request = new XMLHttpRequest();
@@ -438,7 +438,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/gysin.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};	
+		};	/*
 		if(document.getElementById("hablützel-bürki").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Gianna Hablützel-Bürki (SVP)");
 			var request = new XMLHttpRequest();

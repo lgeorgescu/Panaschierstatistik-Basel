@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"KL"],
+                "target":["Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas","Gander, Thomas" ],
+                "value": [332	,19		,54,	8,	1652	,43	,177	,102,	12		,				8
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

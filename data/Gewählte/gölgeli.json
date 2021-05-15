@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",		"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB",	"KL"],
+                "target":["Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe", "Gölgeli, Edibe"
+                ],
+                "value": [290,	10	,12,	6,		1851,	4	,388	,63,	1	,5,			2	,26
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

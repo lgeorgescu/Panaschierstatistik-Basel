@@ -3,9 +3,12 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP", "PB"],
+                "target":["Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine","Gallacchi, Pasqualine"
+                ],
+                "value": [276,	96	,	136,	11	,61	,282,	11	,28,	47,5
+
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
