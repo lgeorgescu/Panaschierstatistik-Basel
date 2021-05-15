@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Jenny, David","Jenny, David","Jenny, David","Jenny, David","Jenny, David","Jenny, David","Jenny, David","Jenny, David","Jenny, David","Jenny, David"],
+                "value": [348,	566	,	409	,22	,55	,57	,7,	55,	71
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

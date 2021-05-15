@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP","KL"],
+                "target":["Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther","Keller, Esther"
+                ],
+                "value": [831	,155	,	454,	30,	530	,109,	205	,901	,62		,				9
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Hoppler, Laurin","Hoppler, Laurin","Hoppler, Laurin","Hoppler, Laurin","Hoppler, Laurin","Hoppler, Laurin","Hoppler, Laurin","Hoppler, Laurin"],
+                "value": [265,	16,	6	,439,	1,	1244,	44	,3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

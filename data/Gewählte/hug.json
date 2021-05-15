@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Hug, Michael","Hug, Michael","Hug, Michael","Hug, Michael","Hug, Michael","Hug, Michael","Hug, Michael","Hug, Michael","Hug, Michael"],
+                "value": [352	,114	,	1459,	6,	48	,65	,21	,94	,53
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

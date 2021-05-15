@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",		"FUK",	"PB",	"KL"],
+                "target":["Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle","Lachenmeier, Michelle"
+                ],
+                "value": [328	,8,	21,	10,	11,	593,	18,	1318,	59	,	16,				12,	16
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB"],
+                "target":["Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz","Herter, Balz"
+                ],
+                "value": [415	,169,	1	,302,	14,	86,	421,	15,	66	,103	,3	,			5
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

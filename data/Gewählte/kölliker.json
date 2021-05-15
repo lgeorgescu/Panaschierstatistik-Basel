@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",		"FUK",	"PB",	"KL"],
+                "target":["Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian","Kölliker, Sebastian"],
+                "value": [287	,16,	10	,34	,4	,1484,	15,	199	,49,		12	,			5,	3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"PP",	"LDP",	"SP",	"CVP",	"GB",	"GLP",	"PB",	"KL"],
+                "target":["Kabakci, Mahir",  "Kabakci, Mahir", "Kabakci, Mahir", "Kabakci, Mahir", "Kabakci, Mahir", "Kabakci, Mahir", "Kabakci, Mahir", "Kabakci, Mahir", "Kabakci, Mahir"              ],
+                "value": [123,		2,	2,		1780,	6	,59	,177,		2	,34
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

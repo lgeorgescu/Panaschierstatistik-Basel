@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB",	"KL"],
+                "target":["Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome"],
+                "value": [418,	55,	14,	86	,10,	1685,	22,	328	,120	,12,	11,			7,	13
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

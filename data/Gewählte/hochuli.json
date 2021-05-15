@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph","Hochuli, Christoph"
+                ],
+                "value": [120	,1		,14	,328,	14,	11,	7	,8	,38
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

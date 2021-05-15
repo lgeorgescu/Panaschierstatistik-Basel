@@ -438,7 +438,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/gysin.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};	/*
+		};	
 		if(document.getElementById("hablützel-bürki").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Gianna Hablützel-Bürki (SVP)");
 			var request = new XMLHttpRequest();
@@ -484,7 +484,7 @@ function updateData(){
 		if(document.getElementById("hochuli").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Christoph Hochuli (EVP)");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gewählt/hochuli.json", false);
+			request.open("GET","/data/Gewählte/hochuli.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -614,14 +614,14 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
-		if(document.getElementById("messeri_b").selected) {
+		if(document.getElementById("messerli_b").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Beatrice Messerli (GB)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/messerli_b.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};
-		if(document.getElementById("messeri_p").selected) {
+		};/*
+		if(document.getElementById("messerli_p").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Pascal Messerli (SVP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/messerli_p.json", false);

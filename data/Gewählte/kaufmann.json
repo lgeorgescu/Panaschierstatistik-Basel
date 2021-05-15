@@ -4,9 +4,9 @@
         "height":    500, 
         "data": {
                 "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
-                "target":["Hettich, Daniel","Hettich, Daniel","Hettich, Daniel","Hettich, Daniel","Hettich, Daniel","Hettich, Daniel","Hettich, Daniel","Hettich, Daniel","Hettich, Daniel"
+                "target":["Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle","Kaufmann, Danielle"
                 ],
-                "value": [1037,	217	,	807	,56,	87,	68,	15,	56	,195
+                "value": [447	,20	,	26,	11,	2620,	11,	400	,77	,5
                 ]
         },
         "nodeWidth":     15,

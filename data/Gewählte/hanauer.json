@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela","Hanauer, Raffaela"
+                ],
+                "value": [379,	7	,	19,	14	,928,	18,	1659,	86,	2
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

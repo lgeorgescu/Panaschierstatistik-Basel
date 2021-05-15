@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP","KL"],
+                "target":["Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice","Isler, Beatrice"
+                ],
+                "value": [498,	155	,	346	,27	,236,	559,	65,	82	,81		,				3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
