@@ -940,38 +940,38 @@ function updateData(){
 	var tmp_2 = d3.select('#Sankey-Chart')
 	tmp_2.selectAll("*").remove();
 	
-	document.getElementById("battagliatext").style.visibility="hidden";
-	if (document.getElementById("battaglia").selected) {document.getElementById("battagliatext").style.visibility="visible";}
+	document.getElementById("battagliatext").style.display="none";
+	if (document.getElementById("battaglia").selected) {document.getElementById("battagliatext").style.display="revert";}
 
 	if(document.getElementById("gesamt").checked){
-		document.getElementById("parteiliste").style.visibility="hidden";
-		document.getElementById("achsen").style.visibility="hidden";
-		document.getElementById("wahlkreisliste").style.visibility="hidden";
-		document.getElementById("gewähltenliste").style.visibility="hidden";
-		document.getElementById("parteiIntern").style.visibility="visible";
+		document.getElementById("parteiliste").style.display="none";
+		document.getElementById("achsen").style.display="none";
+		document.getElementById("wahlkreisliste").style.display="none";
+		document.getElementById("gewähltenliste").style.display="none";
+		document.getElementById("parteiIntern").style.display="revert";
 	}
 	
 	if(document.getElementById("einzelne_parteien").checked){
-		document.getElementById("parteiliste").style.visibility="visible";
-		document.getElementById("achsen").style.visibility="visible";
-		document.getElementById("wahlkreisliste").style.visibility="hidden";
-		document.getElementById("gewähltenliste").style.visibility="hidden";
-		document.getElementById("parteiIntern").style.visibility="visible";
+		document.getElementById("parteiliste").style.display="revert";
+		document.getElementById("achsen").style.display="revert";
+		document.getElementById("wahlkreisliste").style.display="none";
+		document.getElementById("gewähltenliste").style.display="none";
+		document.getElementById("parteiIntern").style.display="revert";
 	}
 
 	if(document.getElementById("wahlkreise").checked){
-		document.getElementById("parteiliste").style.visibility="hidden";
-		document.getElementById("achsen").style.visibility="hidden";
-		document.getElementById("wahlkreisliste").style.visibility="visible";
-		document.getElementById("gewähltenliste").style.visibility="hidden";
-		document.getElementById("parteiIntern").style.visibility="visible";
+		document.getElementById("parteiliste").style.display="none";
+		document.getElementById("achsen").style.display="none";
+		document.getElementById("wahlkreisliste").style.display="revert";
+		document.getElementById("gewähltenliste").style.display="none";
+		document.getElementById("parteiIntern").style.display="revert";
 	}
 	if(document.getElementById("gewählte").checked){
-		document.getElementById("parteiliste").style.visibility="hidden";
-		document.getElementById("achsen").style.visibility="hidden";
-		document.getElementById("wahlkreisliste").style.visibility="hidden";
-		document.getElementById("gewähltenliste").style.visibility="visible";
-		document.getElementById("parteiIntern").style.visibility="hidden";
+		document.getElementById("parteiliste").style.display="none";
+		document.getElementById("achsen").style.display="none";
+		document.getElementById("wahlkreisliste").style.display="none";
+		document.getElementById("gewähltenliste").style.display="revert";
+		document.getElementById("parteiIntern").style.display="none";
 	}
 
 
