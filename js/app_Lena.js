@@ -201,10 +201,12 @@ function updateData(){
 	//Wahlkreise fertig
 
 	if(document.getElementById("gewählte").checked) {	
-
+	
+            
+             
 
 		if(document.getElementById("albietz").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Daniel Albietz");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Daniel Albietz (CVP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/albietz.json", false);
 			request.send(null);
@@ -212,7 +214,7 @@ function updateData(){
 		};
 		
 		if(document.getElementById("alioth").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Catherine Alioth");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Catherine Alioth (LDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/alioth.json", false);
 			request.send(null);
@@ -221,7 +223,7 @@ function updateData(){
 
 
 		if(document.getElementById("amacher").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Nicole Amacher");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Nicole Amacher (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/amacher.json", false);
 			request.send(null);
@@ -229,7 +231,7 @@ function updateData(){
 		};	
 
 		if(document.getElementById("amiet").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Lorenz Amiet");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Lorenz Amiet (SVP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/amiet.json", false);
 			request.send(null);
@@ -237,7 +239,7 @@ function updateData(){
 		};	
 
 		if(document.getElementById("auderset").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an André Auderset");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an André Auderset (LDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/auderset.json", false);
 			request.send(null);
@@ -245,11 +247,12 @@ function updateData(){
 		};	
 
 		if(document.getElementById("battaglia").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Olivier Battaglia");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Olivier Battaglia (AB)");
 		};	
 
+            
 		if(document.getElementById("baumgartner").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Beda Baumgartner");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Beda Baumgartner (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/baumgartner.json", false);
 			request.send(null);
@@ -257,7 +260,7 @@ function updateData(){
 		};
 
 		if(document.getElementById("bernasconi").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Patrizia Bernasconi");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Patrizia Bernasconi (GB)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/bernasconi.json", false);
 			request.send(null);
@@ -265,15 +268,17 @@ function updateData(){
 		};
 
 		if(document.getElementById("bocherens").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an François Bocherens");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an François Bocherens (LDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/bocherens.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
-		
+		 
+              
+              
 		if(document.getElementById("bolliger").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Oliver Bolliger");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Oliver Bolliger (GB)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/bolliger.json", false);
 			request.send(null);
@@ -281,7 +286,7 @@ function updateData(){
 		};
 
 		if(document.getElementById("bothe-wenk").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Sandra Bothe-Wenk");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Sandra Bothe-Wenk (GLP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/bothe-wenk.json", false);
 			request.send(null);
@@ -289,7 +294,7 @@ function updateData(){
 		};
 
 		if(document.getElementById("brandenburger").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Jessica Brandenburger");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Jessica Brandenburger (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/brandenburger.json", false);
 			request.send(null);
@@ -297,7 +302,7 @@ function updateData(){
 		};
 		
 		if(document.getElementById("braun-gallacchi").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Beat Braun-Gallacchi");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Beat Braun-Gallacchi (FDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/braun-gallacchi.json", false);
 			request.send(null);
@@ -305,7 +310,7 @@ function updateData(){
 		};
 		
 		if(document.getElementById("brigger").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an René Brigger");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an René Brigger (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/brigger.json", false);
 			request.send(null);
@@ -313,7 +318,7 @@ function updateData(){
 		};
 		
 		if(document.getElementById("bucher").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Erich Bucher");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Erich Bucher (FDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/bucher.json", false);
 			request.send(null);
@@ -322,15 +327,16 @@ function updateData(){
 		
 		
 		if(document.getElementById("christ").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Tobias Christ");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Tobias Christ (GLP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/christ.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 		
+              
 		if(document.getElementById("cuenod").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Tim Cuénod");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Tim Cuénod (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/cuenod.json", false);
 			request.send(null);
@@ -338,7 +344,7 @@ function updateData(){
 		};
 		
 		if(document.getElementById("dill").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Alexandra Dill");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Alexandra Dill (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/dill.json", false);
 			request.send(null);
@@ -346,7 +352,7 @@ function updateData(){
 		};
 
 		if(document.getElementById("ebi").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Alex Ebi");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Alex Ebi (LDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/ebi.json", false);
 			request.send(null);
@@ -354,47 +360,246 @@ function updateData(){
 		};
 		
 		if(document.getElementById("eichner-guth").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Mark Eichner-Guth");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Mark Eichner-Guth (FDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/eichner-guth.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 		if(document.getElementById("erdogan").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Seyit Erdogan");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Seyit Erdogan (SP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/erdogan.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 		if(document.getElementById("eymann").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Stephanie Eymann");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Stephanie Eymann (LDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/eymann.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 		if(document.getElementById("faesch").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Lukas Faesch");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Lukas Faesch (LDP)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/faesch.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
+		
 		if(document.getElementById("friedl").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Harald Friedl");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Harald Friedl (GB)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/friedl.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 		if(document.getElementById("fuhrer").selected) {
-			d3.select("#header_app").text("Veränderte Stimmen an Raphael Fuhrer");
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Raphael Fuhrer GB)");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Gewählte/fuhrer.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};		
+		};
+		//neue
+		 /*
+		if(document.getElementById("furlano").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Raoul I. Furlano");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/furlano.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("gallacchi").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel Pasqualine Gallacchi");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/gallacchi.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("gander").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Thomas Gander");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/gander.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("gölgeli").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Edibe Gölgeli");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/gölgeli.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("gysin").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Brigitte Gysin (EVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/gysin.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("hablützel-bürki").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Gianna Hablützel-Bürki (SVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hablützel-bürki.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("hanauer").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Raffaela Hanauer (GB)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hanauer.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("hazenkamp-vonArx").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Marianne Hazenkamp-von Arx (GB)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hazenkamp-vonArx.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("heer").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Barbara Heer (SP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/heer.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("herter").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Balz Herter (CVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/herter.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("hettich").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Daniel Hettich (LDP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hettich.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};	
+		if(document.getElementById("hochuli").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Christoph Hochuli (EVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählt/hochuli.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("hofer").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Salome Hofer (SP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hofer.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("hoppler").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Laurin Hoppler (GB)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hoppler.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("hug").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Michael Hug (LDP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/hug.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("isler").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Beatrice Isler (CVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/isler.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("isler-christ").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Lydia Isler-Christ (LDP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/isler-christ.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("jenny").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an David Jenny (FDP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/jenny.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("kabakci").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Mahir Kabakci (SP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/kabakci.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("kaufmann").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Danielle Kaufmann (SP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/kaufmann.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("keller").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Esther Keller (GLP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/keller.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("knellwolf").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Andrea Knellwolf (CVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/knellwolf.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("kölliker").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Sebastian Kölliker (SP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/kölliker.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("krummenacher").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Toya Krummenacher (SP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/krummenacher.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("kühne").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Brigitte Kühne (GLP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/kühne.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("lachenmeier").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Michelle Lachenmeier (GB)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/lachenmeier.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("leonhardt").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Franz-Xaver Leonhardt (CVP)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/leonhardt.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+		if(document.getElementById("leuthardt").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Beat Leuthardt (GB)");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/leuthardt.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};*/
 				   
 	}
 	//Gewählte fertig
