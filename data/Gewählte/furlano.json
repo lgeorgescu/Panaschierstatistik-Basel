@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I.","Furlano, Raoul I." ],
+                "value": [571	,219	,	1665,	12,	124	,127,	8	,77	,121
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
