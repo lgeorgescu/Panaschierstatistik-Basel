@@ -20,7 +20,7 @@ function updateData(){
 				var params = JSON.parse(request.responseText);
 				}			
 	};
-
+	/*
 	if (document.getElementById("einzelne_parteien").checked){
 	//Get data for FDP
 	if(document.getElementById("fdp").selected) {	
@@ -190,20 +190,54 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-	}
+	}*/
 	//Einzelne Parteien fertig
 
 	if(document.getElementById("wahlkreise").checked) {	
 		
 		d3.select("#header_app").text("Wahlkreise");
+
+		if(document.getElementById("bettingen").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Bettingen");
+		};
+
+		if(document.getElementById("grossbasel-ost").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Grossbasel Ost");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/grossbasel-ost.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("grossbasel-west").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Grossbasel West");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/grossbasel-west.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("kleinbasel").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Kleinbasel");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/kleinbasel.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		if(document.getElementById("riehen").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Riehen");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Gewählte/riehen.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
 						   
 	};
 	//Wahlkreise fertig
-
-	if(document.getElementById("gewählte").checked) {	
 	
-            
-             
+	if(document.getElementById("gewählte").checked) {	
+	      
 
 		if(document.getElementById("albietz").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Daniel Albietz (CVP)");
@@ -974,7 +1008,8 @@ function updateData(){
 	}
 
 	document.getElementById("keineStimmenErhalten").style.display="none";
-	if ((document.getElementById("battaglia").selected && document.getElementById("gewählte").checked) || (document.getElementById("bettingen").selected && document.getElementById("wahlkreise").checked)) {
+	if ((document.getElementById("battaglia").selected && document.getElementById("gewählte").checked) || 
+		(document.getElementById("bettingen").selected && document.getElementById("wahlkreise").checked)) {
 		document.getElementById("keineStimmenErhalten").style.display="revert";
 		document.getElementById("parteiIntern").style.display="none";				
 	}
