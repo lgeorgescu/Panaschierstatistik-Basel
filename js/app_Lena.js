@@ -940,8 +940,7 @@ function updateData(){
 	var tmp_2 = d3.select('#Sankey-Chart')
 	tmp_2.selectAll("*").remove();
 	
-	document.getElementById("battagliatext").style.display="none";
-	if (document.getElementById("battaglia").selected) {document.getElementById("battagliatext").style.display="revert";}
+	
 
 	if(document.getElementById("gesamt").checked){
 		document.getElementById("parteiliste").style.display="none";
@@ -974,7 +973,11 @@ function updateData(){
 		document.getElementById("parteiIntern").style.display="none";
 	}
 
-
+	document.getElementById("keineStimmenErhalten").style.display="none";
+	if ((document.getElementById("battaglia").selected && document.getElementById("gewählte").checked) || (document.getElementById("bettingen").selected && document.getElementById("wahlkreise").checked)) {
+		document.getElementById("keineStimmenErhalten").style.display="revert";
+		document.getElementById("parteiIntern").style.display="none";				
+	}
 
 	draw_sankey(params);
 }
