@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar","Sutter, Kaspar"
+                ],
+                "value": [488,	22		,72	,18,	2538,	27	,316	,107,	20
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

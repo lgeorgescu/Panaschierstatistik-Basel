@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Stalder, Roger","Stalder, Roger","Stalder, Roger","Stalder, Roger","Stalder, Roger","Stalder, Roger","Stalder, Roger","Stalder, Roger","Stalder, Roger" ],
+                "value": [233,	62	,	85,	11,	6	,17,	1,	7	,558
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

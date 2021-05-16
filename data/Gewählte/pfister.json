@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Pfister, Pascal","Pfister, Pascal","Pfister, Pascal","Pfister, Pascal","Pfister, Pascal","Pfister, Pascal","Pfister, Pascal","Pfister, Pascal","Pfister, Pascal"
+                ],
+                "value": [335	,14	,	56	,28,	2623,	19	,229,	52	,18
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

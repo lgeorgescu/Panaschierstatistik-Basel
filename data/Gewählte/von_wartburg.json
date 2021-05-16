@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian","von Wartburg, Christian"
+                ],
+                "value": [453	,54	,	93,	31,	2412,	40,	236	,94,	18
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

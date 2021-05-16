@@ -620,7 +620,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/messerli_b.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};/*
+		};
 		if(document.getElementById("messerli_p").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Pascal Messerli (SVP)");
 			var request = new XMLHttpRequest();
@@ -677,10 +677,10 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
-		if(document.getElementById("rechtsteiner").selected) {
-			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Daniel Rechsteiner Niggi (GLP)");
+		if(document.getElementById("rechsteiner").selected) {
+			d3.select("#header_app").text("Stimmen veränderter Wahlzettel an Niggi Daniel Rechsteiner (GLP)");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gewählte/rechtsteiner.json", false);
+			request.open("GET","/data/Gewählte/rechsteiner.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -929,7 +929,7 @@ function updateData(){
 			request.open("GET","/data/Gewählte/zürcher.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};*/
+		};
 
 				   
 	}

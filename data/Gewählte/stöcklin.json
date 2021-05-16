@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg","Stöcklin, Jürg" ],
+                "value": [320	,9	,	32,	24,	772,	16	,1227,	63	,5
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

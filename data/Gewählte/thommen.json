@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"KL"],
+                "target":["Thommen, Oliver","Thommen, Oliver","Thommen, Oliver","Thommen, Oliver","Thommen, Oliver","Thommen, Oliver","Thommen, Oliver","Thommen, Oliver","Thommen, Oliver"
+                ],
+                "value": [265	,2	,	14,	4,	356,	13,	780	,41,						1
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

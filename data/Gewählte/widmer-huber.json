@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas","Widmer-Huber, Thomas"
+                ],
+                "value": [339	,25	,	53	,642	,49	,54,	9	,10	,71
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

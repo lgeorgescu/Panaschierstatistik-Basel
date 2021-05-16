@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB",	"KL"],
+                "target":["Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela","Seggiani, Michela"
+                ],
+                "value": [159	,4,	5,	3	,1	,1558,	2	,165	,22,	1	,4	,		5,	3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

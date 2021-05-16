@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"CVP",		"GLP",	"SVP"],
+                "target":["Schweizer-Hoffmann, Jenny","Schweizer-Hoffmann, Jenny","Schweizer-Hoffmann, Jenny","Schweizer-Hoffmann, Jenny","Schweizer-Hoffmann, Jenny","Schweizer-Hoffmann, Jenny","Schweizer-Hoffmann, Jenny"
+                ],
+                "value": [153,	48	,	72,	6	,	5	,	4,	323
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

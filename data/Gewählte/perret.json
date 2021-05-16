@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc","Perret, Jean-Luc"
+                ],
+                "value": [378	,20		,50,	13	,2414,	8,	252,	69,	10
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

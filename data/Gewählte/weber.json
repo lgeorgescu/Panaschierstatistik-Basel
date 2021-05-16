@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",		"SP",	"CVP","GLP",	"SVP",	"FUK",	"VA",		"PB"],
+                "target":["Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric","Weber, Eric"
+                ],
+                "value": [89,	6	,6,	12,		17,	1,		3	,63,	2,	174	,		6
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

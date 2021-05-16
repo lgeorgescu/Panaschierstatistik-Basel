@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",		"LDP",	"EVP",	"SP",		"GB",	"GLP",	"SVP"],
+                "target":["Wirz, Lea","Wirz, Lea","Wirz, Lea","Wirz, Lea","Wirz, Lea","Wirz, Lea","Wirz, Lea"
+                ],
+                "value": [243	,		8,	6,	395,		1182,	43,	3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

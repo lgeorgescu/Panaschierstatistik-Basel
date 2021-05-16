@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K.","Schaller, Beat K."
+                ],
+                "value": [277,	84	,	140	,10,	13	,25,	1	,10,	619
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB"],
+                "target":["Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes","Sieber, Johannes"
+                ],
+                "value": [178	,9	,3,	17,	6,	98,	5,	64,	308	,3,	9,				5
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

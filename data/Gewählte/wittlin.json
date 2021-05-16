@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan","Wittlin, Stefan"
+                ],
+                "value": [303	,16	,	36,	8	,2301,	12,	198	,37,	11
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

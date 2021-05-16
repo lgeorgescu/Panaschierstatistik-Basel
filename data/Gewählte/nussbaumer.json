@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP","KL"],
+                "target":["Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie","Nussbaumer, Melanie"
+                ],
+                "value": [208	,3		,13	,6,	1652,	11	,160,	23,	6	,					10
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

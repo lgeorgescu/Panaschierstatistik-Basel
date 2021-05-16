@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",   "LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"KL"],
+                "target":["Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin","Yilmaz, Semseddin"
+                ],
+                "value": [198,	5	,	28	,5,	1498,	4,	125,	38,	2	,					3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

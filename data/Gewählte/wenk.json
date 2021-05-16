@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB",	"KL"],
+                "target":["Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin","Wenk, Kerstin"
+                ],
+                "value": [255,	13,	4,	6,	4	,1614,	13,	301,	60,	6,	5	,		7,	12
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

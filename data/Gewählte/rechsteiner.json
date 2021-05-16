@@ -4,9 +4,8 @@
         "height":    500, 
         "data": {
                 "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
-                "target":["Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole","Strahm-Lavanchy, Nicole"
-                ],
-                "value": [274,	46	,	392,	3	,13,	12	,3	,6,	30
+                "target":["Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel","Rechsteiner, Niggi Daniel" ],
+                "value": [147,	25	,	68	,2,	99	,15	,19	,389,	9
                 ]
         },
         "nodeWidth":     15,

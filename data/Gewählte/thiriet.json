@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP","KL"],
+                "target":["Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme","Thiriet, Jérôme"
+                ],
+                "value": [368	,8	,	82,	10,	513	,18,	797,	109,	3,						9
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

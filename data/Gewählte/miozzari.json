@@ -3,9 +3,9 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP"],
+                "target":["Miozzari, Claudio","Miozzari, Claudio","Miozzari, Claudio","Miozzari, Claudio","Miozzari, Claudio","Miozzari, Claudio","Miozzari, Claudio","Miozzari, Claudio" ],
+                "value": [407	,16	,	28,	8	,2412,	16	,307	,80]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

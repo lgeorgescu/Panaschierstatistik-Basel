@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP","LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Thüring, Joël","Thüring, Joël","Thüring, Joël","Thüring, Joël","Thüring, Joël","Thüring, Joël","Thüring, Joël","Thüring, Joël","Thüring, Joël"
+                ],
+                "value": [456,	173,		328	,31,	17	,62,	11,	23,	813
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

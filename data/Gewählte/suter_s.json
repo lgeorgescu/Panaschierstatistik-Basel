@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP","GLP",	"SVP",		"VA",	"PB"],
+                "target":["Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan","Suter, Stefan"
+                ],
+                "value": [296	,83,		165,	9,	8,	52,		17	,584,		12,			10
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

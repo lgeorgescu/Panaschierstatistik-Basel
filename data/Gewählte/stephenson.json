@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP","LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy","Stephenson, Jeremy"
+                ],
+                "value": [484, 184	,	1071,	17	,158,	81,	19,	97,	187
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

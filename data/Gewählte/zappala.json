@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas","Zappalà, Andreas"
+                ],
+                "value": [713	,584		,286,	34	,32,	79,	5	,28	,170
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

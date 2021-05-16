@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Roth, Franziska","Roth, Franziska","Roth, Franziska","Roth, Franziska","Roth, Franziska","Roth, Franziska","Roth, Franziska","Roth, Franziska","Roth, Franziska"
+                ],
+                "value": [330	,6	,	22,	34,	575,	18,	72	,15	,3
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

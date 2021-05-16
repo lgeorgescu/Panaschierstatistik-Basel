@@ -3,9 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"VA",	"AB",	"BDV",	"PB",	"KL"],
-                "target":[],
-                "value": []
+                "source":["Ohne",	"FDP",		"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP"],
+                "target":["Messerli, Pascal", "Messerli, Pascal","Messerli, Pascal","Messerli, Pascal","Messerli, Pascal","Messerli, Pascal","Messerli, Pascal","Messerli, Pascal","Messerli, Pascal"
+                ],
+                "value": [251	,117	,	184	,8,	15,	15,	3,	11,	765
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
