@@ -148,7 +148,7 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-/*
+
 	//Get data for GB
 	if(document.getElementById("gb").selected) {	
 		
@@ -168,7 +168,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
+	};/*
 
 	//Get data for SP
 	if(document.getElementById("sp").selected) {	

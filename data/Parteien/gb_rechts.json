@@ -5,8 +5,9 @@
         "data": {
                 "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	"VA", "PB",	"KL"
                 ],
-                "target":[],
-                "value": []
+                "target":[" GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB"," GB" ],
+                "value": [12678	,217,	138	,643	,329,	17354,	344	,71757,	1744,	158,	106	,3	,122,	611
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
