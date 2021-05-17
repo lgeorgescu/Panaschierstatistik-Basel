@@ -3,10 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	"VA", "PB",	"KL"
+                "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	 "PB",	"KL"
                 ],
-                "target":[],
-                "value": []
+                "target":[" KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"],
+                "value": [285,	11	,23	,13	,5,	277,	3	,369	,10,	3,	6	,	2,	1216
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

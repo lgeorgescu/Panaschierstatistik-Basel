@@ -146,7 +146,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};/*
+	};
 	//Get data for KL
 	if(document.getElementById("kl").selected) {	
 		
@@ -166,7 +166,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};*/
+	};
 	//Get data for LDP
 	if(document.getElementById("ldp").selected) {	
 		
