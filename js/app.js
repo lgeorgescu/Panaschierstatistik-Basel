@@ -43,7 +43,7 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-/*
+
 	//Get data for SVP
 	if(document.getElementById("svp").selected) {	
 		
@@ -63,7 +63,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};*/
+	};
 
 
 	//Get data for GLP
