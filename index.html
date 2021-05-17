@@ -56,23 +56,23 @@
         <div id="home" class="container tab-pane active"><br>
           <h1 id="header_app">Stimmen veränderter Wahlzettel</h1>
 
+          <div style="display: inline-flex">
           <form>
             <input type="radio"  name="optradio" id='gesamt'  onchange="updateData()" checked> Alle Parteien 
             <input type="radio"  name="optradio" id='einzelne_parteien' onchange="updateData()" > Einzelne Parteien 
             <input type="radio"  name="optradio" id='wahlkreise' onchange="updateData()" > Wahlkreise
             <input type="radio"  name="optradio" id='gewählte' onchange="updateData()" > Gewählte Personen
           </form>
-          <br>
-          <form id="achsen" onchange="updateData()">
+      
+          <form id="achsen" onchange="updateData()"style="padding-left: 25px;">
             <select>
               <option id="links">linke Achse</option>
               <option id="rechts">rechte Achse</option>
             </select>
           </form>
+  
 
-          <br>
-
-          <form id="parteiliste" onchange="updateData()">
+          <form id="parteiliste" onchange="updateData()"style="padding-left: 25px;">
             <select>
               <option id="cvp">CVP</option>
               <option id="evp">EVP</option>
@@ -91,7 +91,7 @@
           </form>
          
           
-          <form id="wahlkreisliste" onchange="updateData()">
+          <form id="wahlkreisliste" onchange="updateData()"style="padding-left: 25px;">
             <select>
               <option id="bettingen">Bettingen</option>
               <option id="grossbasel-ost">Grossbasel Ost</option>
@@ -102,7 +102,7 @@
           </form>
          
     
-          <form id="gewähltenliste" onchange="updateData()">
+          <form id="gewähltenliste" onchange="updateData()" style="padding-left: 25px;">
             <select>
               <option id="albietz">Albietz, Daniel (CVP)</option>
               <option id="alioth">Alioth, Catherine (LDP)</option>
@@ -206,17 +206,18 @@
               <option id="zürcher">Zürcher,	Tonja (GB)</option>
             </select>
           </form>
-          <br>
 
-          <form id='keineStimmenErhalten'>Keine Stimmen veränderter Wahlzettel vorhanden.</form>
           
-          <form id="parteiIntern">
+          
+          <form id="parteiIntern" style="padding-left: 25px;">
           <label class="switch"> 
           <input type="checkbox" id="eigenePartei" onchange="updateData()"checked>
           <span class="slider round"></span>
           </label>
           Fluss innerhalb einer Partei anzeigen
           </form>
+          </div> <br>
+          <form id='keineStimmenErhalten'><br><br><br>Keine Stimmen veränderter Wahlzettel vorhanden.</form>
           
             <svg id="main"></svg>
             
