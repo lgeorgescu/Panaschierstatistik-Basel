@@ -1,0 +1,16 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP",	"FUK"	,"VA",	"PB",	"KL"
+                ],
+                "target":[" CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK"," FUK"," GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP"," KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL"," KL", " LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB"," PB"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP"," SVP"," VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA"    ],
+                "value": []
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

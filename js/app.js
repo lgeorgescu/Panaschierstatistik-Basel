@@ -215,7 +215,7 @@ function updateData(){
 			request.open("GET","/data/Wahlkreise/grossbasel-west.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};
+		};*/
 
 		if(document.getElementById("kleinbasel").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Kleinbasel");
@@ -223,14 +223,24 @@ function updateData(){
 			request.open("GET","/data/Wahlkreise/kleinbasel.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};*/
+		};
 
 		if(document.getElementById("riehen").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Riehen");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Wahlkreise/riehen.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
+
+			if(document.getElementById("eigenePartei").checked){
+				var request = new XMLHttpRequest();
+				request.open("GET","/data/Wahlkreise/riehen.json", false);
+				request.send(null);
+				var params = JSON.parse(request.responseText);
+				}
+	
+				if(!document.getElementById("eigenePartei").checked){
+					var request = new XMLHttpRequest();
+					request.open("GET","/data/Wahlkreise/riehen_ohne_eigene.json", false);
+					request.send(null);
+					var params = JSON.parse(request.responseText);
+					}			
 		};
 						   
 	};
