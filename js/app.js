@@ -20,7 +20,7 @@ function updateData(){
 				var params = JSON.parse(request.responseText);
 				}			
 	};
-	/*
+	
 	if (document.getElementById("einzelne_parteien").checked){
 	//Get data for FDP
 	if(document.getElementById("fdp").selected) {	
@@ -28,7 +28,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der FDP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/fdp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -37,7 +37,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die FDP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/fdp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -49,7 +49,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der SVP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/svp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -58,7 +58,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die SVP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/svp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -71,7 +71,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der GLP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/glp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -80,7 +80,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die GLP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/glp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -92,7 +92,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der EVP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/evp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -101,7 +101,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die EVP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/evp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -113,7 +113,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der LDP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/ldp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -122,7 +122,7 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die LDP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/ldp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -134,7 +134,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der CVP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/cvp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -143,28 +143,28 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die CVP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/cvp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
 
 	//Get data for GD
-	if(document.getElementById("gd").selected) {	
+	if(document.getElementById("gb").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Stimmen der GD an die Parteien");
+			d3.select("#header_app").text("Stimmen der GB an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/gb_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Stimmen der Parteien an die GD");
+			d3.select("#header_app").text("Stimmen der Parteien an die GB");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/gb_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
@@ -176,7 +176,7 @@ function updateData(){
 		if(document.getElementById("links").selected) {
 			d3.select("#header_app").text("Stimmen der SP an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/sp_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
@@ -185,12 +185,12 @@ function updateData(){
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die SP");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Gesamt/gesamt.json", false);
+			request.open("GET","/data/Parteien/sp_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-	}*/
+	}
 	//Einzelne Parteien fertig
 
 	if(document.getElementById("wahlkreise").checked) {	
@@ -999,7 +999,7 @@ function updateData(){
 		document.getElementById("achsen").style.display="revert";
 		document.getElementById("wahlkreisliste").style.display="none";
 		document.getElementById("gewähltenliste").style.display="none";
-		document.getElementById("parteiIntern").style.display="revert";
+		document.getElementById("parteiIntern").style.display="none";
 	}
 
 	if(document.getElementById("wahlkreise").checked){
