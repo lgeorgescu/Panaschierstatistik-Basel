@@ -186,7 +186,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};/*
+	};
 	//Get data for PB
 	if(document.getElementById("pb").selected) {	
 		
@@ -206,7 +206,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
+	};/*
 	//Get data for PP
 	if(document.getElementById("pp").selected) {	
 		
