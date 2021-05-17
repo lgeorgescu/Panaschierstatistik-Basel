@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":[ ],
+                "source":["GLP","GLP","GLP","GLP","GLP","GLP","GLP","GLP","GLP","GLP","GLP","GLP","GLP" ],
                 "target":[" CVP", " EVP", " FDP", " FUK", " GB", " GLP", " KL", " LDP", " PB", " PP", " SP", " SVP", " VA"],
-                "value": []
+                "value": [1231,438,1481,93,1744,23945,10,2198,12,8,3387,261,5
+                    ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,

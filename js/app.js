@@ -63,7 +63,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
+	};*/
 
 
 	//Get data for GLP
@@ -85,7 +85,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};*/
+	};
 
 	//Get data for EVP
 	if(document.getElementById("evp").selected) {	

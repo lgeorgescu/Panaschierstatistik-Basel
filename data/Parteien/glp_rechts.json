@@ -3,10 +3,11 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	"VA", "PB",	"KL"
+                "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	 "PB",	"KL"
                 ],
-                "target":[],
-                "value": []
+                "target":[" GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"," GLP"],
+                "value": [7291,	881,	22,	1925	,373,	3559,	531,	1337,	23945,	295,	24	,	49	,38
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
