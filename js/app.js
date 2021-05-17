@@ -21,7 +21,7 @@ function updateData(){
 				}			
 	};
 	
-	if (document.getElementById("einzelne_parteien").checked){
+	/*if (document.getElementById("einzelne_parteien").checked){
 	//Get data for FDP
 	if(document.getElementById("fdp").selected) {	
 		
@@ -190,7 +190,7 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-	}
+	}*/
 	//Einzelne Parteien fertig
 
 	if(document.getElementById("wahlkreise").checked) {	
@@ -219,10 +219,20 @@ function updateData(){
 
 		if(document.getElementById("kleinbasel").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Kleinbasel");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Wahlkreise/kleinbasel.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
+
+			if(document.getElementById("eigenePartei").checked){
+				var request = new XMLHttpRequest();
+				request.open("GET","/data/Wahlkreise/kleinbasel.json", false);
+				request.send(null);
+				var params = JSON.parse(request.responseText);
+				}
+	
+				 if(!document.getElementById("eigenePartei").checked){
+					var request = new XMLHttpRequest();
+					request.open("GET","/data/Wahlkreise/kleinbasel_ohne_eigene.json", false);
+					request.send(null);
+					var params = JSON.parse(request.responseText);
+					}			
 		};
 
 		if(document.getElementById("riehen").selected) {
