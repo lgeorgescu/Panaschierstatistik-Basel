@@ -21,8 +21,9 @@ function updateData(){
 				}			
 	};
 	
-	/*if (document.getElementById("einzelne_parteien").checked){
+	if (document.getElementById("einzelne_parteien").checked){
 	//Get data for FDP
+	/*
 	if(document.getElementById("fdp").selected) {	
 		
 		if(document.getElementById("links").selected) {
@@ -126,9 +127,9 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
+	};*/
 
-	//Get data for LDP
+	//Get data for CVP
 	if(document.getElementById("cvp").selected) {	
 		
 		if(document.getElementById("links").selected) {
@@ -138,8 +139,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
-
-		
+	
 		if(document.getElementById("rechts").selected) {
 			d3.select("#header_app").text("Stimmen der Parteien an die CVP");
 			var request = new XMLHttpRequest();
@@ -148,8 +148,8 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-
-	//Get data for GD
+/*
+	//Get data for GB
 	if(document.getElementById("gb").selected) {	
 		
 		if(document.getElementById("links").selected) {
@@ -189,8 +189,8 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
-	}*/
+	};*/
+	}
 	//Einzelne Parteien fertig
 
 	if(document.getElementById("wahlkreise").checked) {	

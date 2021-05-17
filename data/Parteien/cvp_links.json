@@ -1,0 +1,17 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["CVP","CVP","CVP","CVP","CVP","CVP","CVP","CVP","CVP","CVP","CVP","CVP","CVP" ],
+                "target":[" CVP", " EVP", " FDP", " FUK", " GB", " GLP", " KL", " LDP", " PB", " PP", " SP", " SVP", " VA"],
+                "value": [19965 ,389 ,1269 ,3 ,344 ,531 ,3 ,1779 ,4 ,2 ,756 ,541 ,8]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }
+
+        
