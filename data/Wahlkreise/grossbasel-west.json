@@ -1,0 +1,24 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne", "FDP", "LDP"	, "EVP",	"SP", "CVP",	"GB",	"GLP",  "SVP",  "Ohne",  "FDP", "LDP",   "EVP",	"SP" , "CVP",	"GB",	"GLP",    "SVP", "Ohne",   "FDP",   "LDP",  "EVP",	"SP"	, "CVP",	"GB",	"GLP",     "SVP",   "Ohne", "FDP", "LDP"	,  "EVP",	"SP"	,"CVP",	"GB",	"GLP"	,"SVP","Ohne", "FDP", "LDP"	,"EVP",	"SP"	, "CVP",  "GB",	"GLP"	, "SVP","Ohne",   "FDP", "LDP"	,  "EVP",	"SP"	,"CVP",	   "GB",	"GLP"	,   "SVP",     "Ohne",      "FDP", "LDP"	,"EVP",	   "SP"	,   "CVP",	"GB",	"GLP",      "SVP",  "Ohne",       "FDP", "LDP"	 ,  "EVP",	"SP","CVP",	"GB",	"GLP"	,"SVP"
+                ],
+                "target":[" CVP"," CVP",  " CVP"," CVP",  " CVP"," CVP",  " CVP",  " CVP",  " CVP", " EVP", " EVP"," EVP",  " EVP"," EVP"," EVP"," EVP",   " EVP",   " EVP", " FDP",  " FDP",  " FDP", " FDP",    " FDP"," FDP",  " FDP", " FDP",     " FDP",   " GB",  " GB",     " GB",  " GB",      " GB"," GB"," GB",      " GB"," GB"," GLP"," GLP"," GLP"," GLP",   " GLP"," GLP"," GLP",   " GLP"," GLP"," LDP",  " LDP",  " LDP", " LDP",     " LDP"," LDP"," LDP",       " LDP",  " LDP",     " SP",       " SP",     " SP"," SP",     " SP",  " SP"," SP",    " SP",      " SP",  " SVP",     " SVP",     " SVP"," SVP"," SVP"," SVP"," SVP"," SVP"," SVP"],
+                "value": [2105,	496,	895	,221,	716	,7256,	157,	506	,295 ,1093,	102,	286	,3570,	461,	144,	143,	226,	158 ,3113,	9601,	1891,	174,	795,	386,	204	,704,	782 ,5718,	101	,218,	148	,9094,	138,	35162	,752,	49, 2735,	378	,663,	178,	1512,	258	,641,	9700,	118 ,4483,	1407,	20018,	257	,1207	,567,	293,	822,	911 ,8287,	373	,741	,285	,65251,	309,	6609,	1439,	175, 2124,	531,	865,	100	,56,	199,	28,	104,	9175
+
+
+
+
+
+
+
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }
