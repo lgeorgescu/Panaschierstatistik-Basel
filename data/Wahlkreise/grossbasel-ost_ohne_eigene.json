@@ -1,0 +1,18 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne", "FDP", "LDP"	, "EVP",	"SP", 	"GB",	"GLP",  "SVP", "KL", "Ohne",  "FDP", "LDP",   	"SP" , "CVP",	"GB",	"GLP",    "SVP","KL", "Ohne",      "LDP",  "EVP",	"SP"	, "CVP",	"GB",	"GLP",     "SVP","KL",   "Ohne", "FDP", "LDP"	,  "EVP",	"SP"	,"CVP",		"GLP"	,"SVP","KL","Ohne", "FDP", "LDP"	,"EVP",	"SP"	, "CVP",  "GB"	, "SVP","KL","Ohne",   "FDP", "LDP"	,  "EVP",	"SP",   "GB",	"GLP"	,   "SVP",    "Ohne",      "FDP", "EVP",	   "SP"	,   "CVP",	"GB",	"GLP",      "SVP","KL",  "Ohne",       "FDP", "LDP"	 ,  "EVP",	"CVP",	"GB",	"GLP"	,"SVP","KL","Ohne", "FDP", "LDP"	, "EVP",	"SP", "CVP",	"GB",	"GLP",   "KL"
+                ],
+                "target":[" CVP"," CVP",  " CVP"," CVP",  " CVP"," CVP",  " CVP",  " CVP",  " CVP",  " EVP"," EVP",  " EVP"," EVP"," EVP"," EVP",   " EVP",   " EVP"," EVP",   " FDP",  " FDP", " FDP",    " FDP"," FDP",  " FDP", " FDP",     " FDP"," FDP",     " GB",     " GB",  " GB",      " GB"," GB"," GB"," GB",      " GB"," GB"," GLP"," GLP"," GLP",   " GLP"," GLP"," GLP", " GLP",   " GLP"," GLP"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," KL"," LDP",  " LDP",  " LDP", " LDP",     " LDP"," LDP"," LDP",       " LDP",  " LDP",      " SP",      " SP",     " SP"," SP",     " SP",  " SP"," SP",    " SP",      " SP",   " SVP",     " SVP",     " SVP"," SVP"," SVP"," SVP"," SVP"," SVP"," SVP"],
+                "value": [2152,	508	,1108,	135	,745,		272	,415,	282	,7 ,855,	68	,179	,236,	111,	54,	117	,148	,25, 2236,		1891,	81,	405	,366,	97,	474	,433,	10 ,3319	,46,	290,	81,	3595,	119,		579	,44	,176 ,2448,	295	,940,	114,	1048,	197	,424	,	112,	24, 89,	9	,9,	3,	101	,	63,	5,	3, 4136,	1232	,	120,	861,	582	,205	,885,	655,	4 ,4557,	145,	530	,134	,244,	2893,	980,	77,	133, 1520,	358,	765,	97,	70,	113,	40,	56,		9
+
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }
