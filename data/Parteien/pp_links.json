@@ -3,9 +3,9 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":[ ],
+                "source":["PP","PP","PP","PP","PP","PP","PP","PP","PP","PP","PP","PP","PP" ],
                 "target":[" CVP", " EVP", " FDP", " FUK", " GB", " GLP", " KL", " LDP", " PB", " PP", " SP", " SVP", " VA"],
-                "value": []
+                "value": [10,3,20,49,138,22,23,32,14,155,124,9,19]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
@@ -13,3 +13,4 @@
         "id": "main", 
         "units" : "Stimmen"
         }
+        
