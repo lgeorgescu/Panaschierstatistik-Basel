@@ -1,0 +1,17 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	 "PB",	"KL"
+                ],
+                "target":[" FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK"," FUK" ],
+                "value": [419,	12,	49,	8	,7,	375,	3,	342	,93,	9	,365,		44,	40
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }

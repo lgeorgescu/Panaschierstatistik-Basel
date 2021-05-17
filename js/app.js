@@ -22,6 +22,47 @@ function updateData(){
 	};
 	
 	if (document.getElementById("einzelne_parteien").checked){
+		
+	//Get data for CVP
+	if(document.getElementById("cvp").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der CVP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/cvp_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+	
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die CVP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/cvp_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+	
+	//Get data for EVP
+	if(document.getElementById("evp").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der EVP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/evp_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die EVP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/evp_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
 	//Get data for FDP
 	
 	if(document.getElementById("fdp").selected) {	
@@ -44,110 +85,27 @@ function updateData(){
 		};					   
 	};
 
-	//Get data for SVP
-	if(document.getElementById("svp").selected) {	
+	//Get data for FUK
+	if(document.getElementById("fuk").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Stimmen der SVP an die Parteien");
+			d3.select("#header_app").text("Stimmen der FUK an die Parteien");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/svp_links.json", false);
+			request.open("GET","/data/Parteien/fuk_links.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Stimmen der Parteien an die SVP");
+			d3.select("#header_app").text("Stimmen der Parteien an die FUK");
 			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/svp_rechts.json", false);
+			request.open("GET","/data/Parteien/fuk_rechts.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
 
-
-	//Get data for GLP
-	if(document.getElementById("glp").selected) {	
-		
-		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Stimmen der GLP an die Parteien");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/glp_links.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};
-
-		
-		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Stimmen der Parteien an die GLP");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/glp_rechts.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};					   
-	};
-
-	//Get data for EVP
-	if(document.getElementById("evp").selected) {	
-		
-		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Stimmen der EVP an die Parteien");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/evp_links.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};
-
-		
-		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Stimmen der Parteien an die EVP");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/evp_rechts.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};					   
-	};
-
-	//Get data for LDP
-	if(document.getElementById("ldp").selected) {	
-		
-		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Stimmen der LDP an die Parteien");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/ldp_links.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};
-
-		
-		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Stimmen der Parteien an die LDP");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/ldp_rechts.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};					   
-	};
-
-	//Get data for CVP
-	if(document.getElementById("cvp").selected) {	
-		
-		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Stimmen der CVP an die Parteien");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/cvp_links.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};
-	
-		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Stimmen der Parteien an die CVP");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Parteien/cvp_rechts.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
-		};					   
-	};
 
 	//Get data for GB
 	if(document.getElementById("gb").selected) {	
@@ -169,6 +127,106 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
+	//Get data for GLP
+	if(document.getElementById("glp").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der GLP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/glp_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die GLP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/glp_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};/*
+	//Get data for KL
+	if(document.getElementById("kl").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der KL an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/kl_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die KL");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/kl_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};*/
+	//Get data for LDP
+	if(document.getElementById("ldp").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der LDP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/ldp_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die LDP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/ldp_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};/*
+	//Get data for PB
+	if(document.getElementById("pb").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der PB an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/pb_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die PB");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/pb_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+	//Get data for PP
+	if(document.getElementById("pp").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der PP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/pp_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die PP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/pp_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};*/
 
 	//Get data for SP
 	if(document.getElementById("sp").selected) {	
@@ -190,6 +248,48 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
+	
+	//Get data for SVP
+	if(document.getElementById("svp").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der SVP an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/svp_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die SVP");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/svp_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};
+	/*
+	//Get data for VA
+	if(document.getElementById("va").selected) {	
+		
+		if(document.getElementById("links").selected) {
+			d3.select("#header_app").text("Stimmen der VA an die Parteien");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/va_links.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};
+
+		
+		if(document.getElementById("rechts").selected) {
+			d3.select("#header_app").text("Stimmen der Parteien an die VA");
+			var request = new XMLHttpRequest();
+			request.open("GET","/data/Parteien/va_rechts.json", false);
+			request.send(null);
+			var params = JSON.parse(request.responseText);
+		};					   
+	};*/
 	}
 	//Einzelne Parteien fertig
 
