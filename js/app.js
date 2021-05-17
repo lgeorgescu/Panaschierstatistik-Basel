@@ -300,14 +300,14 @@ function updateData(){
 		if(document.getElementById("bettingen").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Bettingen");
 		};
-		/*
+		
 		if(document.getElementById("grossbasel-ost").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Grossbasel Ost");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Wahlkreise/grossbasel-ost.json", false);
 			request.send(null);
 			var params = JSON.parse(request.responseText);
-		};*/
+		};
 
 		if(document.getElementById("grossbasel-west").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Grossbasel West");
