@@ -106,7 +106,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};/*
+	};
 
 	//Get data for LDP
 	if(document.getElementById("ldp").selected) {	
@@ -127,7 +127,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};*/
+	};
 
 	//Get data for CVP
 	if(document.getElementById("cvp").selected) {	
@@ -168,7 +168,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};/*
+	};
 
 	//Get data for SP
 	if(document.getElementById("sp").selected) {	
@@ -189,7 +189,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};*/
+	};
 	}
 	//Einzelne Parteien fertig
 

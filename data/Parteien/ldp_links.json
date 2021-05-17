@@ -3,9 +3,10 @@
         "width":    960, 
         "height":    500, 
         "data": {
-                "source":[ ],
+                "source":["LDP","LDP","LDP","LDP","LDP","LDP","LDP","LDP","LDP","LDP","LDP","LDP","LDP" ],
                 "target":[" CVP", " EVP", " FDP", " FUK", " GB", " GLP", " KL", " LDP", " PB", " PP", " SP", " SVP", " VA"],
-                "value": []
+                "value": [3158,605,5598,8,643,1925,13,53906,6,4,1614,2420,24
+                    ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
