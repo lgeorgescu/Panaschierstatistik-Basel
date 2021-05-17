@@ -1,0 +1,18 @@
+{
+    "dom": "Sankey-Chart",
+        "width":    960, 
+        "height":    500, 
+        "data": {
+                "source":["Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,	"GB" ,"GLP",	"SVP",	"FUK"	,"VA",	"PB",	    "Ohne",	"FDP"	,"PP"	,"LDP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP"	,"VA",	"PB",	"KL",     "Ohne"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP",	"FUK"	,"VA",	"PB",	      "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP",	"PB",	"KL",        "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP", "GLP",	"SVP",	"FUK"	,"VA",	"PB",	"KL",       "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,	"SVP",	"FUK"	,	"PB",	"KL",         "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"FUK"	,	"PB",	        "Ohne",	"FDP"	,"PP"	,	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP",	"FUK"	,"VA",	"PB",	"KL",         "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP"	,"VA",		"KL",      "Ohne",	"FDP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"SVP",	"FUK"	,	"PB",	"KL",      "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP"	,"CVP",	"GB" ,"GLP",	"SVP",	"FUK"	,	"PB",	"KL",       "Ohne",	"FDP"	,"PP"	,"LDP",	"EVP",	"SP"	,"CVP",	"GB" ,"GLP",	"VA",	"PB",	"KL",          "Ohne",	"FDP"	,"PP"	,"LDP",		"SP"	,"CVP",	"GLP",	"SVP",	"FUK"	,	"PB",	"KL" 
+                ],
+                "target":[" CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," CVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," EVP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK", " FUK"," FUK"," GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB", " GB",   " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP", " GLP",  " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL", " KL"," KL", " LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP"," LDP", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB", " PB"," PB"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," PP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP"," SP",  " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP", " SVP"," SVP"," VA",  " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA", " VA"    ],
+                "value": [1838,	569	,10,	898	,82,	401,	88	,240	,367,	7,	18	,22,	397,	43,	3,	49,	123,	47,	44,	56,	85,  3,	32,	6, 1858,		20,	1187	,31	,275,	366,	98,	213	,536,	12,	3,	17,	 419,	12,	49,	8	,7,	375,	3,	342,	93,	9,		44,	40, 2822,	62,	138,	114,	68,	4193,	72,		342,	52,	106,	3,	122,	435, 1268,	118,	22,	224	,44,	873,	43,	242,		33,	24,		49,	14, 196,	2,	23,	4,	2	,176,	3,	306	,5	,	6,		2	, 3084,	935	,32,		78,	633	,506,	148,	378,	799,	8,	27,	32,	9, 62,	1,	14,	6,	4,	6	,4,	17,	12,	33,		3,	4 ,156,	3,	4,	3,	55,	2,	44,	8	,5,	15,		32,	20 ,4133,	189,	124,	277	,74,	150,	4180,	839,	50,	114,		73,	229, 1540,	257,	9,	497,	29,	56,	143,	6,	78,		59,	66,	5 ,217,	14,	19,	24,	28	,8	,	5,	114,	2,	16,	1
+
+                ]
+        },
+        "nodeWidth":     15,
+        "nodePadding":     10,
+        "layout":     32,
+        "id": "main", 
+        "units" : "Stimmen"
+        }
