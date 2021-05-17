@@ -23,7 +23,7 @@ function updateData(){
 	
 	if (document.getElementById("einzelne_parteien").checked){
 	//Get data for FDP
-	/*
+	
 	if(document.getElementById("fdp").selected) {	
 		
 		if(document.getElementById("links").selected) {
@@ -43,7 +43,7 @@ function updateData(){
 			var params = JSON.parse(request.responseText);
 		};					   
 	};
-
+/*
 	//Get data for SVP
 	if(document.getElementById("svp").selected) {	
 		

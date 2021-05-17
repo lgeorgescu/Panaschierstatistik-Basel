@@ -5,8 +5,9 @@
         "data": {
                 "source":["Ohne",	 "FDP",	"PP",	"LDP",	 "EVP", "SP",	 "CVP",	 "GB"	, "GLP",	 "SVP",	 "FUK",	"VA", "PB",	"KL"
                 ],
-                "target":[],
-                "value": []
+                "target":[" FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP"," FDP" ],
+                "value": [9455,	25132,	20,	5598,	365,	1591	,1269	,417	,1481	,2097,	12,	3	,17	,10
+                ]
         },
         "nodeWidth":     15,
         "nodePadding":     10,
