@@ -85,7 +85,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
+	};*/
 
 	//Get data for EVP
 	if(document.getElementById("evp").selected) {	
@@ -106,7 +106,7 @@ function updateData(){
 			request.send(null);
 			var params = JSON.parse(request.responseText);
 		};					   
-	};
+	};/*
 
 	//Get data for LDP
 	if(document.getElementById("ldp").selected) {	
