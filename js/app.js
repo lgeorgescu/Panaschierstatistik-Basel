@@ -211,10 +211,20 @@ function updateData(){
 
 		if(document.getElementById("grossbasel-west").selected) {
 			d3.select("#header_app").text("Stimmen veränderter Wahlzettel im Wahlkreis Grossbasel West");
-			var request = new XMLHttpRequest();
-			request.open("GET","/data/Wahlkreise/grossbasel-west.json", false);
-			request.send(null);
-			var params = JSON.parse(request.responseText);
+		
+			if(document.getElementById("eigenePartei").checked){
+				var request = new XMLHttpRequest();
+				request.open("GET","/data/Wahlkreise/grossbasel-west.json", false);
+				request.send(null);
+				var params = JSON.parse(request.responseText);
+				}
+	
+				 if(!document.getElementById("eigenePartei").checked){
+					var request = new XMLHttpRequest();
+					request.open("GET","/data/Wahlkreise/grossbasel-west_ohne_eigene.json", false);
+					request.send(null);
+					var params = JSON.parse(request.responseText);
+					}			
 		};
 
 		if(document.getElementById("kleinbasel").selected) {
