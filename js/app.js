@@ -1269,21 +1269,22 @@ function draw_sankey(params){
 	   node.append("rect")
 		 .attr("height", function (d) { return d.dy; })
 		 .attr("width", sankey.nodeWidth())
-		 .style("fill", function(d) {if ((d.name==" SVP")||(d.name=="SVP")) return d.color="green"; 
-		 else if ((d.name==" SP")||(d.name=="SP")) return d.color="red"; 
-		 else if ((d.name==" FDP")||(d.name=="FDP")) return d.color="blue"; 
-		 else if ((d.name==" LDP")||(d.name=="LDP")) return d.color="blue"; 
-		 else if ((d.name==" GLP")||(d.name=="GLP")) return d.color="green"; 
-		 else if ((d.name==" GB")||(d.name=="GB")) return d.color="green";
+		 .style("fill", function(d) {if ((d.name==" SVP")||(d.name=="SVP")) return d.color="#088404"; 
+		 else if ((d.name==" SP")||(d.name=="SP")||(d.name=="Baumgartner, Beda")) return d.color="#ff0404"; 
+		 else if ((d.name==" FDP")||(d.name=="FDP")) return d.color="#3864fc"; 
+		 else if ((d.name==" LDP")||(d.name=="LDP")) return d.color="#38349c"; 
+		 else if ((d.name==" GLP")||(d.name=="GLP")) return d.color="#d8fc5c"; 
+		 else if ((d.name==" GB")||(d.name=="GB")) return d.color="#08b454";
 		 else if ((d.name==" KL")||(d.name=="KL")) return d.color="grey";
 		 else if ((d.name==" PP")||(d.name=="PP")) return d.color="grey";
 		 else if ((d.name==" PB")||(d.name=="PB")) return d.color="grey";
-		 else if ((d.name==" VA")||(d.name=="VA")) return d.color="purple";
-		 else if ((d.name==" EVP")||(d.name=="EVP")) return d.color="yellow";
-		 else if ((d.name==" CVP")||(d.name=="CVP")) return d.color="orange";
+		 else if ((d.name==" VA")||(d.name=="VA")||(d.name=="Weber, Eric")) return d.color="#c894cc";
+		 else if ((d.name==" EVP")||(d.name=="EVP")) return d.color="#fffc04";
+		 else if ((d.name==" CVP")||(d.name=="CVP")) return d.color="#f89444";
 		 else if ((d.name==" FUK")||(d.name=="FUK")) return d.color="grey";
 		 else if ((d.name=="Ohne")) return d.color="grey";
-		 else return d.color=color(d.name.replace(/ .*/, "")) })//function (d) { return d.color = color(d.name.replace(/ .*/, "")); }
+		 else return d.color=color(d.name.replace(/ .*/, "")) 
+		})//function (d) { return d.color = color(d.name.replace(/ .*/, "")); }
 		 		 .style("stroke", function (d) { return d3v3.rgb(d.color).darker(2); })
 	   .append("title")
 		 .text(function (d) { return d.name + "\n" + format(d.value); });
