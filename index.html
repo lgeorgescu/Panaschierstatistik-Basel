@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Panaschierstatistik</title>
    
-    <link href="style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Einbinden der Sankey-Scripts-->
     <script src='http://timelyportfolio.github.io/rCharts_d3_sankey//js/d3.v3.js' type='text/javascript'></script>
@@ -54,14 +54,14 @@
         
         
         <div id="home" class="container tab-pane active"><br>
-          <h1 id="header_app">Stimmen veränderter Wahlzettel</h1>
+          <h2 id="header_app">Stimmen veränderter Wahlzettel</h1>
 
           <div style="display: inline-flex">
           <form>
             <input type="radio"  name="optradio" id='gesamt'  onchange="updateData()" checked> Alle Parteien 
             <input type="radio"  name="optradio" id='einzelne_parteien' onchange="updateData()" > Einzelne Parteien 
             <input type="radio"  name="optradio" id='wahlkreise' onchange="updateData()" > Wahlkreise
-            <input type="radio"  name="optradio" id='gewählte' onchange="updateData()" > Gewählte Personen
+            <input type="radio"  name="optradio" id='gewählte' onchange="updateData()" > 100 Mitglieder
           </form>
       
           <form id="achsen" onchange="updateData()"style="padding-left: 25px;">

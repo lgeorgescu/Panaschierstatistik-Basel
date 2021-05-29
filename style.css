@@ -1,21 +1,6 @@
-/*
-#topheader .navbar-nav li > a {
-	text-transform: capitalize;
-	color: #333;
-	transition: background-color .2s, color .2s;
-	
-	&:hover,
-	&:focus {
-		background-color: #333;
-		color: #fff;
-	}
-}
 
-#topheader .navbar-nav li.active > a {
-	background-color: #333;
-	color: #fff;
-}
-*/
+@charset "UTF-8";
+
 .navbar {
     margin-bottom:0;
   }
@@ -72,15 +57,13 @@
 	background-color: #555;
   }
   .jumbotron {
-	background-image: url("Logo2.jpg");
+	/*background-image: url("img3.jpg");*/
 	background-size: cover;
 	margin-bottom:0;
   }
 
   /*
-
   Part Lukas Sankey-Diagramme: 
-
   http://www.d3noob.org/2013/02/sankey-diagrams-description-of-d3js-code.html
 but have to think original source was Mike Bostock
 http://bost.ocks.org/mike/sankey/
