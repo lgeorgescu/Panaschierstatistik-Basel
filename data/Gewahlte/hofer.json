@@ -4,7 +4,7 @@
         "height":    500, 
         "data": {
                 "source":["Ohne",	"FDP",	"PP",	"LDP",	"EVP",	"SP",	"CVP",	"GB",	"GLP",	"SVP",	"FUK",	"PB",	"KL"],
-                "target":["Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome","Hofer,Salome"],
+                "target":["Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome","Hofer, Salome"],
                 "value": [418,	55,	14,	86	,10,	1685,	22,	328	,120	,12,	11,			7,	13
                 ]
         },

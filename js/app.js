@@ -1269,18 +1269,67 @@ function draw_sankey(params){
 	   node.append("rect")
 		 .attr("height", function (d) { return d.dy; })
 		 .attr("width", sankey.nodeWidth())
-		 .style("fill", function(d) {if ((d.name==" SVP")||(d.name=="SVP")) return d.color="#088404"; 
-		 else if ((d.name==" SP")||(d.name=="SP")||(d.name=="Baumgartner, Beda")) return d.color="#ff0404"; 
-		 else if ((d.name==" FDP")||(d.name=="FDP")) return d.color="#3864fc"; 
-		 else if ((d.name==" LDP")||(d.name=="LDP")) return d.color="#38349c"; 
-		 else if ((d.name==" GLP")||(d.name=="GLP")) return d.color="#d8fc5c"; 
-		 else if ((d.name==" GB")||(d.name=="GB")) return d.color="#08b454";
-		 else if ((d.name==" KL")||(d.name=="KL")) return d.color="grey";
-		 else if ((d.name==" PP")||(d.name=="PP")) return d.color="grey";
+		 .style("fill", function(d) {
+		//SVP
+		 if ((d.name==" SVP")||(d.name=="SVP")||(d.name=="Amiet, Lorenz")||(d.name=="Hablützel-Bürki, Gianna")
+		 ||(d.name=="Messerli, Pascal")||(d.name=="Schaller, Beat K.")||(d.name=="Schweizer-Hoffmann, Jenny")
+		 ||(d.name=="Stalder, Roger")||(d.name=="Stumpf, Daniela")||(d.name=="Suter, Stefan")||(d.name=="Thüring, Joël")
+		 ||(d.name=="Trachsel, David")||(d.name=="Wehrli, Felix")
+		 ) return d.color="#088404"; 
+		 //SP
+		 else if ((d.name==" SP")||(d.name=="SP")||(d.name=="Baumgartner, Beda")||(d.name=="Amacher, Nicole")
+		 ||(d.name=="Brandenburger, Jessica")||(d.name=="Brigger, René")||(d.name=="Cuénod, Tim")
+		 ||(d.name=="Dill, Alexandra")||(d.name=="Erdogan, Seyit")||(d.name=="Gander, Thomas")||(d.name=="Gölgeli, Edibe")
+		 ||(d.name=="Heer, Barbara")||(d.name=="Hofer, Salome")||(d.name=="Kabakci, Mahir")||(d.name=="Kaufmann, Danielle")
+		 ||(d.name=="Kölliker, Sebastian")||(d.name=="Krummenacher, Toya")||(d.name=="Mathys, Lisa")||(d.name=="Mazzotti, Sasha")
+		 ||(d.name=="Miozzari, Claudio")||(d.name=="Nussbaumer, Melanie")||(d.name=="Perret, Jean-Luc")||(d.name=="Pfister, Pascal")
+		 ||(d.name=="Roth, Franziska")||(d.name=="Seggiani, Michela")||(d.name=="Sigirci, Mehmet")||(d.name=="Sutter, Kaspar")
+		 ||(d.name=="von Wartburg, Christian")||(d.name=="Wenk, Kerstin")||(d.name=="Wittlin, Stefan")||(d.name=="Wyss, Sarah")
+		 ||(d.name=="Yilmaz, Semseddin")
+		 ) return d.color="#ff0404"; 
+		 //FDP
+		 else if ((d.name==" FDP")||(d.name=="FDP")||(d.name=="Braun-Gallacchi,	Beat")||(d.name=="Bucher, Erich")
+		 ||(d.name=="Eichner-Guth, Mark")||(d.name=="Jenny, David")||(d.name=="Sartorios-Brüschweiler, Karin")
+		 ||(d.name=="Urgese, Luca")||(d.name=="Zappalà,	Andreas")
+		 ) return d.color="#3864fc"; 
+		 //LDP
+		 else if ((d.name==" LDP")||(d.name=="LDP")||(d.name=="Alioth, Catherine")||(d.name=="Auderset, André")
+		 ||(d.name=="Bocherens, François")||(d.name=="Ebi, Alex")||(d.name=="Eymann, Stephanie")||(d.name=="Faesch, Lukas")
+		 ||(d.name=="Furlano, Raoul I.")||(d.name=="Hettich, Daniel")||(d.name=="Hug, Michael")||(d.name=="Müry, Thomas")
+		 ||(d.name=="Isler-Christ, Lydia")||(d.name=="Stephenson, Jeremy")||(d.name=="Strahm-Lavanchy, Nicole")
+		 ||(d.name=="von Falkenstein, Annina")
+		 ) return d.color="#38349c"; 
+		 //GLP
+		 else if ((d.name==" GLP")||(d.name=="GLP")||(d.name=="Bothe-Wenk, Sandra")||(d.name=="Christ, Tobias")
+		 ||(d.name=="Keller, Esther")||(d.name=="Kühne, Brigitte")||(d.name=="Pekerman, Bülent")||(d.name=="Rechsteiner, Niggi Daniel")
+		 ||(d.name=="Sieber, Johannes")||(d.name=="Wüest-Rudin, David")
+		 ) return d.color="#d8fc5c"; 
+		 //GB
+		 else if ((d.name==" GB")||(d.name=="GB")||(d.name=="Bernasconi, Patrizia")||(d.name=="Bolliger, Oliver")
+		 ||(d.name=="Friedl, Harald")||(d.name=="Fuhrer, Raphael")||(d.name=="Hanauer, Raffaela")
+		 ||(d.name=="Hazenkamp-von Arx, Marianne")||(d.name=="Hoppler, Laurin")||(d.name=="Lachenmeier, Michelle")
+		 ||(d.name=="Leuthardt, Beat")||(d.name=="Messerli, Beatrice")||(d.name=="Mück, Heidi")||(d.name=="Stöcklin, Jürg")
+		 ||(d.name=="Thiriet, Jérôme")||(d.name=="Thommen, Oliver")||(d.name=="Vergeat, Jo")||(d.name=="Weibel, Fleur")
+		 ||(d.name=="Wirz, Lea")||(d.name=="Zürcher, Tonja")
+		 ) return d.color="#08b454";
+		 //KL
+		 else if ((d.name==" KL")||(d.name=="KL")) return d.color="#e81414";
+		 //PP
+		 else if ((d.name==" PP")||(d.name=="PP")) return d.color="#48145c";
+		 //PB
 		 else if ((d.name==" PB")||(d.name=="PB")) return d.color="grey";
+		 //VA
 		 else if ((d.name==" VA")||(d.name=="VA")||(d.name=="Weber, Eric")) return d.color="#c894cc";
-		 else if ((d.name==" EVP")||(d.name=="EVP")) return d.color="#fffc04";
-		 else if ((d.name==" CVP")||(d.name=="CVP")) return d.color="#f89444";
+		 //EVP
+		 else if ((d.name==" EVP")||(d.name=="EVP")||(d.name=="Gysin, Brigitte")
+		 ||(d.name=="Hochuli, Christoph")||(d.name=="Widmer-Huber, Thomas")
+		 ) return d.color="#fffc04";
+		 //CVP
+		 else if ((d.name==" CVP")||(d.name=="CVP")||(d.name=="Albietz, Daniel")||(d.name=="Gallacchi, Pasqualine")
+		 ||(d.name=="Herter, Balz")||(d.name=="Isler, Beatrice")||(d.name=="Knellwolf, Andrea")||(d.name=="Leonhardt, Franz-Xaver")
+		 ||(d.name=="Strahm, Andrea Elisabeth")
+		 ) return d.color="#f89444";
+		 //FUK
 		 else if ((d.name==" FUK")||(d.name=="FUK")) return d.color="grey";
 		 else if ((d.name=="Ohne")) return d.color="grey";
 		 else return d.color=color(d.name.replace(/ .*/, "")) 
@@ -1288,9 +1337,7 @@ function draw_sankey(params){
 		 		 .style("stroke", function (d) { return d3v3.rgb(d.color).darker(2); })
 	   .append("title")
 		 .text(function (d) { return d.name + "\n" + format(d.value); });
-	   
-	
-		
+
 	   	//title for nodes
 	   node.append("text")
 		 .attr("class", "font-weight-bold")
