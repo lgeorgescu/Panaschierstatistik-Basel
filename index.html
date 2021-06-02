@@ -60,7 +60,7 @@
         
         
         <div id="home" class="container tab-pane active"><br>
-          <h3 id="header_app">Kandidatenstimmen veränderter Wahlzettel</h3>
+          <h3 id="header_app">Kandidatenstimmen veränderter Wahllisten</h3>
 
           <div style="display: inline-flex">
           <form>
@@ -223,7 +223,7 @@
           Fluss innerhalb einer Partei anzeigen
           </form>
           </div> <br>
-          <form id='keineStimmenErhalten'><br><br><br>Keine Stimmen veränderter Wahlzettel vorhanden.</form>
+          <form id='keineStimmenErhalten'><br><br><br>Keine Stimmen veränderter Wahllisten vorhanden.</form>
           
             <svg id="main"></svg>
             
@@ -241,7 +241,7 @@
                 Nodes: Die Boxen bzw. Knoten an beiden Enden des Diagramms
               </li>
               <li>
-               Links: Die Verbindungen, welche je zwei Nodes verbinden
+               Links: Die Verbindungsstücke zwischen je zwei Nodes
               </li>
             </ul>
             <br>
@@ -275,7 +275,7 @@
                   data-parent="#accordionEx">
                   <div class="card-body">
                   
-                  Der Datensatz umfasst die Kandidatenstimmen veränderter Wahlzettel über alle Parteien und Wahlkreise hinweg.
+                  Der Datensatz umfasst die Kandidatenstimmen veränderter Wahllisten über alle Parteien und Wahlkreise hinweg.
                   <br> 
                   Durch Klicken des Buttons "Fluss innerhalb einer Partein anzeigen" können die Stimmen, welche eine Partei
                   sich selber gespendet hat, ausgeblendet werden.
@@ -370,7 +370,7 @@
                     data-parent="#accordionEx">
                     <div class="card-body">
                       Im Dropdown-Menu kann ein beliebiges Mitglied des Grossen Rates ausgewählt werden. Aus dem ensprechender
-                      Diagramm ist ersichtlich, woher das Mitglied seine Kandidatenstimmen veränderter Wahlzettel erhalten hat.
+                      Diagramm ist ersichtlich, woher das Mitglied seine Kandidatenstimmen veränderter Wahllisten erhalten hat.
                             
                         </a>
                       </div>
@@ -415,7 +415,7 @@
             <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
               data-parent="#accordionEx">
               <div class="card-body">
-                <p class="mb-4">Kandidaten der folgenden Parteien nahmen an der Wahl teil:</p>
+                <p class="mb-4">Kandidierende der folgenden Parteien nahmen an der Wahl teil:</p>
                 <div class="list-group">
                   <a class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
@@ -545,7 +545,7 @@
                 <div class="card-body">
                  Der Grosse Rat von Basel-Stadt wird jedes Schaltjahr für vier weitere Jahre gewählt. Die Wahl erfolgt in
                  fünf Wahlkreisen nach dem <a href="https://grosserrat.bs.ch/parlament/wahlen/proporz">Proporzverfahren</a>.
-                 Wird eine Person auf einem Wahlzettel aufgeführt, so erhält diese eine Kandidatenstimme und deren Partei eine Parteistimme.
+                 Wird eine Person auf einer Wahlliste aufgeführt, so erhält diese eine Kandidatenstimme und deren Partei eine Parteistimme.
                  <br>
                  <br>
                  <h5>Panaschieren</h5> 
@@ -592,7 +592,7 @@
                 data-parent="#accordionI">
                 <div class="card-body">
                 Der Wahlkreis Bettingen hat nur einen Sitz zugute. Da nur zwei Kandidaten zweier verschiedener Parteien zur Wahl
-                standen, gab es in diesem Wahlkreis keine Stimmen veränderter Wahlzettel.
+                standen, gab es in diesem Wahlkreis keine Stimmen veränderter Wahllisten.
                 </div>
               </div>
 
@@ -611,14 +611,11 @@
             <!--Hier evtl automatischer Download und nicht Link zur Seite-->
             <a href="https://data.bs.ch/explore/dataset/100101/export/?disjunctive.wahlkreisbezeichnung&disjunctive.parteikurzbezeichnung&disjunctive.parteibezeichnung&disjunctive.ganzer_name&disjunctive.jahrgang&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiU1VNIiwieUF4aXMiOiJhbnphaGxfc2l0emUiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjMDA3NTdFIn1dLCJ4QXhpcyI6InBhcnRlaWt1cnpiZXplaWNobnVuZyIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiJzZXJpZTEtMSIsImNvbmZpZyI6eyJkYXRhc2V0IjoiMTAwMTAxIiwib3B0aW9ucyI6eyJkaXNqdW5jdGl2ZS53YWhsa3JlaXNiZXplaWNobnVuZyI6dHJ1ZSwiZGlzanVuY3RpdmUucGFydGVpa3VyemJlemVpY2hudW5nIjp0cnVlLCJkaXNqdW5jdGl2ZS5wYXJ0ZWliZXplaWNobnVuZyI6dHJ1ZSwiZGlzanVuY3RpdmUuZ2FuemVyX25hbWUiOnRydWUsImRpc2p1bmN0aXZlLmphaHJnYW5nIjp0cnVlfX19XSwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZSwidGltZXNjYWxlIjoiIn0%3D" download>hier</a>
             heruntergeladen werden.
-             Für die Darstellungen wurden die Daten aufbereitet. 
-          </p>
-          <p>
-            Das verwendete Titelbild stammt von der <a target="_blank" href="https://data.bs.ch/pages/home/">Website des Datenportals Basel-Stadt</a>.
+             Für die Visualisierung wurden die Daten aufbereitet. 
           </p>
 
           <h5 class="font-weight-lighter">Entwicklung der Website</h5>
-          <p> Das Gerüst der Website wurde vom Open-Data-Projekt von Lukas Oester und Jan Liechti übernommen. Ihre App findet sich unter folgendem <a target="_blank" href="https://direktzahlungen-ch-bauern.opendata.iwi.unibe.ch/">Link</a>.</p>
+          <p> Das Gerüst der Website und der Code des Sankey-Diagramms wurden vom Open-Data-Projekt von Lukas Oester und Jan Liechti übernommen. Ihre App findet sich unter folgendem <a target="_blank" href="https://direktzahlungen-ch-bauern.opendata.iwi.unibe.ch/">Link</a>.</p>
           <p>
             Der gesamte Code befindet sich frei zugänglich auf einer <a target="_blank" href="https://github.com/lgeorgescu/Panaschierstatistik-Basel">Github-Repository</a>.
           </p>
