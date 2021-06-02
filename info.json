@@ -1,6 +1,6 @@
 {
 "title": "Grossratswahlen im Kanton Basel-Stadt: Statistik der veränderten Wahllisten",
-"description": "Visualisierung der Stimmenflüsse mit Sankey-Diagrammen",
+"description": "Visualisierung der Stimmenflüsse mit Sankey- bzw. Alluvial-Diagrammen",
 "author": [
     {"name": "Lena Georgescu", "email": "lena.georgescu@students.unibe.ch"}
 ],

@@ -27,7 +27,7 @@ function updateData(){
 	if(document.getElementById("cvp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der CVP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der CVP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/cvp_links.json", false);
 			request.send(null);
@@ -35,7 +35,7 @@ function updateData(){
 		};
 	
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die CVP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die CVP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/cvp_rechts.json", false);
 			request.send(null);
@@ -47,7 +47,7 @@ function updateData(){
 	if(document.getElementById("evp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der EVP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der EVP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/evp_links.json", false);
 			request.send(null);
@@ -56,7 +56,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die EVP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die EVP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/evp_rechts.json", false);
 			request.send(null);
@@ -68,7 +68,7 @@ function updateData(){
 	if(document.getElementById("fdp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der FDP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der FDP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/fdp_links.json", false);
 			request.send(null);
@@ -77,7 +77,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die FDP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die FDP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/fdp_rechts.json", false);
 			request.send(null);
@@ -89,7 +89,7 @@ function updateData(){
 	if(document.getElementById("fuk").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der FUK an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der FUK ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/fuk_links.json", false);
 			request.send(null);
@@ -98,7 +98,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die FUK");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die FUK");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/fuk_rechts.json", false);
 			request.send(null);
@@ -111,7 +111,7 @@ function updateData(){
 	if(document.getElementById("gb").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der GB an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der GB ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/gb_links.json", false);
 			request.send(null);
@@ -120,7 +120,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die GB");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die GB");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/gb_rechts.json", false);
 			request.send(null);
@@ -131,7 +131,7 @@ function updateData(){
 	if(document.getElementById("glp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der GLP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der GLP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/glp_links.json", false);
 			request.send(null);
@@ -140,7 +140,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die GLP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die GLP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/glp_rechts.json", false);
 			request.send(null);
@@ -151,7 +151,7 @@ function updateData(){
 	if(document.getElementById("kl").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der KL an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der KL ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/kl_links.json", false);
 			request.send(null);
@@ -160,7 +160,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die KL");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die KL");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/kl_rechts.json", false);
 			request.send(null);
@@ -171,7 +171,7 @@ function updateData(){
 	if(document.getElementById("ldp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der LDP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der LDP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/ldp_links.json", false);
 			request.send(null);
@@ -180,7 +180,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die LDP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die LDP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/ldp_rechts.json", false);
 			request.send(null);
@@ -191,7 +191,7 @@ function updateData(){
 	if(document.getElementById("pb").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der PB an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der PB ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/pb_links.json", false);
 			request.send(null);
@@ -200,7 +200,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die PB");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die PB");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/pb_rechts.json", false);
 			request.send(null);
@@ -211,7 +211,7 @@ function updateData(){
 	if(document.getElementById("pp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der PP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der PP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/pp_links.json", false);
 			request.send(null);
@@ -220,7 +220,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die PP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die PP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/pp_rechts.json", false);
 			request.send(null);
@@ -232,7 +232,7 @@ function updateData(){
 	if(document.getElementById("sp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der SP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der SP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/sp_links.json", false);
 			request.send(null);
@@ -241,7 +241,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die SP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die SP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/sp_rechts.json", false);
 			request.send(null);
@@ -253,7 +253,7 @@ function updateData(){
 	if(document.getElementById("svp").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der SVP an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der SVP ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/svp_links.json", false);
 			request.send(null);
@@ -262,7 +262,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die SVP");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die SVP");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/svp_rechts.json", false);
 			request.send(null);
@@ -274,7 +274,7 @@ function updateData(){
 	if(document.getElementById("va").selected) {	
 		
 		if(document.getElementById("links").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der VA an die Parteien");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten von der VA ");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/va_links.json", false);
 			request.send(null);
@@ -283,7 +283,7 @@ function updateData(){
 
 		
 		if(document.getElementById("rechts").selected) {
-			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten der Parteien an die VA");
+			d3.select("#header_app").text("Kandidatenstimmen veränderter Wahllisten  an die VA");
 			var request = new XMLHttpRequest();
 			request.open("GET","/data/Parteien/va_rechts.json", false);
 			request.send(null);
