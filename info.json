@@ -1,10 +1,10 @@
 {
-"title": "Panaschierstatistik der Basler Grossratswahlen 2020",
-"description": "Visualisierung der Wahl der 100 Mitglieder des Grossen Rates von Basel vom 25.10.2020",
+"title": "Grossratswahlen im Kanton Basel-Stadt: Statistik der veränderten Wahllisten",
+"description": "Visualisierung der Stimmenflüsse mit Sankey-Diagrammen",
 "author": [
-    {"name": "Lena Georgescu", "email": "lena.georgescu.99@gmail.com"},
+    {"name": "Lena Georgescu", "email": "lena.georgescu@students.unibe.ch"}
 ],
-"date": "2021-04-22",
+"date": "2021-06-02",
 "category": "Politik",
 "software_license": "CC BY 4.0"
 }
