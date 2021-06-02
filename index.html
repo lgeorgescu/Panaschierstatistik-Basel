@@ -72,8 +72,8 @@
       
           <form id="achsen" onchange="updateData()"style="padding-left: 25px;">
             <select>
-              <option id="links">linke Achse</option>
-              <option id="rechts">rechte Achse</option>
+              <option id="links">Spender</option>
+              <option id="rechts">Empfänger</option>
             </select>
           </form>
   
@@ -233,7 +233,27 @@
 
         <div id="bedienungsanleitung" class="container tab-pane fade"><br>
           <h3 class="font-weight-lighter"> Daten- und Darstellungsauswahl</h3><br>
-          <p class="text-justify">Im Tab Visualisierung kann die Darstellungsweise, sowie das gewünschte Jahr gewählt werden. Beide Darstellungen sind interaktiv. </p><br>
+          <p class="text-justify">
+            Zur einfacheren Lesbarkeit werden in der Beschreibung stets die Begriffe "Nodes" und "Links"
+            verwendet werden.
+            <ul>
+              <li>
+                Nodes: Die Boxen bzw. Knoten an beiden Enden des Diagrams
+              </li>
+              <li>
+               Links: Die Verbindungen, welche je zwei Nodes verbinden
+              </li>
+            </ul>
+            <br>
+            Jeder Node auf der linken Seite des Diagrams steht für einen Stimmenspender. Der Empfänger auf der rechten Seite ist über einen 
+            Link mit dem Spender verbunden. Wenn man mit dem Mauszeiger auf einem Link verharrt, so wird der ensprechende Betrag an Stimmen angezeigt.
+            <br><br>
+            Der mit "Ohne" beschriftene Node steht in allen Darstellungen für die freie Liste.
+            <br><br>
+            Durch Klicken auf den entsprechenden Kreis kann aus den folgenden Datensätzen ausgewählt werden:
+            
+
+            </p><br>
 
           <!--Accordion wrapper-->
             <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
@@ -246,7 +266,7 @@
                   <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                     aria-controls="collapseOne1">
                     <h5 class="mb-0">
-                      Zoomable Sunburst <i class="fas fa-angle-down rotate-icon"></i>                      </h5>
+                      Alle Parteien <i class="fas fa-angle-down rotate-icon"></i> </h5>
                   </a>
                 </div>
 
@@ -254,50 +274,30 @@
                 <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
                   data-parent="#accordionEx">
                   <div class="card-body">
-                    <h5 class="mb-1">Interaktion</h5>
-                    <ul >
-                      <li>Durch Klick auf eine Kategorie, wird in die Darstellung hineingezoomt. Die Angeklickte Kategorie stellt nun die neuen 100% (ganzer Kreis) dar</li>
-                      <li>Durch Klick in die Mitte, werden die übergeordneten Kategorien sichtbar</li>
-                      <li>Es sind fünf Zoomstufen möglich, die Hierarchie ist in der folgenden Tabelle aufgeführt</li>
-                    </ul>
-                    <img src="sunburst.gif" width="300" height="300" class="mx-auto d-block">
-                    <h5 class="mb-1">Hierachie</h5>
-                    <p class="mb-4"> Der Zoomable Sunburst zeigt immer zwei Kategorien, wie die Direktzahlungen aufgeteilt werden.</p>
-                    <div class="list-group">
-                      <a class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Anbauart</h5>
-                          <small>1. Stufe</small>
-                        </div>
-                        <p class="mb-1">Konventionell, biologisch</p>
-                      </a>
-                      <a class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Betriebsart</h5>
-                          <small class="text-muted">2. Stufe</small>
-                        </div>
-                        <p class="mb-1">Ackerbau, Gemüse- / Gartenbau, Obstbau, Weinbau, Verkehrsmilch, Mutterkühe, Pferde / Schafe / Ziegen, Schweine, Geflügel, kombiniert Verkehrsmilch / Ackerbau, kombiniert Mutterkühe, Andere / Nicht zugeteilt</p>
-                      </a>
-                      <a class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Kantone</h5>
-                          <small class="text-muted">3. Stufe</small>
-                        </div>
-                        <p class="mb-1">Alle 26 Kantone der Schweiz, «unbekannt» für anonymisierte Einträge</p>
-                      </a>
-                      <a class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Gebiet</h5>
-                          <small class="text-muted">4. Stufe</small>
-                        </div>
-                        <p class="mb-1">Tal- oder Berggebiet</p>
-                      </a>
-                      <a class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Beitragskategorie</h5>
-                          <small class="text-muted">5. Stufe</small>
-                        </div>
-                        <p class="mb-1">Direktzahlungsbeiträge für: Kulturland, Versorgungssicherheit, Biodiversität, Produktionssysteme, Landschaftsqualität, Ressourceneffizienz</p>
+                  
+                  Der Datensatz umfasst die Kandidatenstimmen veränderter Wahlzettel über alle Parteien und Wahlkreise hinweg.
+                  <br> 
+                  Durch Klicken des Buttons "Fluss innerhalb einer Partein anzeigen" können die Stimmen, welche eine Partei
+                  sich selber gespendet hat, ausgeblendet werden.
+                  <br><br>
+                  <div class="card-header">
+                    <a class="card-link" >Lesebeispiele</a>
+                  </div>
+                  <div id="Lesebeispiele" >
+                    <div class="card-body" >
+                    <h6 class="mb-1">Beispiel 1</h6>
+                      <p> Über die Hälfte der Stimmen, welche die Partei GB spendet, geht an die
+                        eigene Partei. </p>
+                      <img src="Bsp1.JPG" class="img-thumbnail" alt="Talgebiet zu Versorgungssicherheit" width="1000" height="auto"> 
+                    <h6 class="mb-1 mt-4">Beispiel 2</h6>
+                      <p> Der grösste Teil der Stimmen, die die Partei GB <b>an andere Parteien</b> spendet, geht an die SP.</p>
+                      <img src="Bsp2.JPG" class="img-thumbnail" alt="Talgebiet zu Versorgungssicherheit" width="1000" height="auto"> 
+                    </div>
+                </div>
+
+                
+                    
+                      
                       </a>
                     </div>
                   </div>
@@ -313,7 +313,7 @@
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                     aria-expanded="false" aria-controls="collapseTwo2">
                     <h5 class="mb-0">
-                      Sankey Diagramm <i class="fas fa-angle-down rotate-icon"></i>
+                      Einzelne Parteien <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -321,44 +321,70 @@
                 <!-- Card body -->
                 <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
                   data-parent="#accordionEx">
-                  <div class="card-body">
-
-                    <h5 class="mb-1">Interaktion</h5>
-                    <p class="mb-4">Das Sankey Diagramm zeigt dieselben Daten wie der Zoomable Sunburst, jedoch nur aggregiert für die gesamte Schweiz. Die Beträge sind in Tausend Franken angegeben. Zeigt die Maus auf eine Verbindung oder auf ein Element wird der entsprechende Betrag angezeigt.
-                      <br /> Es stehen zwei vordefinierte Ansichten zur Auswahl. Dies erlaubt, dass alle möglichen Verbindungen (zwischen zwei Elementen) untersucht werden können. Die einzelnen Elemente können zudem frei verschoben werden, um beispielsweise bei überlappenden Ästen die gewünschte Verbindung besser untersuchen zu können.
-                      <a href="/" target="_blank">The home page will open in another tab.</a>
-                    </p>
-
-                      <div class="card">
-                        <div class="card-header">
-                      <a class="card-link" >Lesebeispiele</a>
-                    </div>
-                    <div id="Lesebeispiele" >
-                      <div class="card-body" >
-                      <h6 class="mb-1">Beispiel 1</h6>
-                        <p> In Ansicht 1 gibt es eine Verbindung zwischen Talgebeit und Versorgungssicherheit. Anhand der Breite der Verbindung kann man sehen, dass rund die Hälfte der Direktzahlungen in Talgebieten mit dem Grund Versorgungssicherheit ausbezahlt werden. </p>
-                        <img src="Lesebeispiel 1.JPG" class="img-thumbnail" alt="Talgebiet zu Versorgungssicherheit" width="300" height="225"> 
-                      <h6 class="mb-1 mt-4">Beispiel 2</h6>
-                        <p> Als zweites Beispiel nehmen wir die Verbindung Verkehrsmilch und Nicht Bio in Ansicht 1. Hier sehen wir, dass weniger als ein Fünftel der Verkehrsmilch biologisch produziert wird.</p>
-                        <img src="Lesebeispiel 2.JPG" class="img-thumbnail" alt="Talgebiet zu Versorgungssicherheit" width="300" height="225"> 
-                      </div>
-
-
-                    
-                  
-                  </div>
-                </div>
+                  <div class="card-body">      
               </div>
                 </div>
 
               </div>
               <!-- Accordion card -->
+               <!-- Accordion card -->
+               <div class="card">
 
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree3">
+                  <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false"
+                    aria-controls="collapseThree3">
+                    <h5 class="mb-0">
+                      Wahlkreise <i class="fas fa-angle-down rotate-icon"></i> </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                  data-parent="#accordionEx">
+                  <div class="card-body">
+                    
+                    
+                  
+                    
+                      
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="headingFour4">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4" aria-expanded="false"
+                      aria-controls="collapseFour4">
+                      <h5 class="mb-0">
+                        100 Mitglieder <i class="fas fa-angle-down rotate-icon"></i> </h5>
+                    </a>
+                  </div>
+  
+                  <!-- Card body -->
+                  <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      
+                     
+                      
+                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <!-- Accordion card -->
               
 
-            </div>
+            
+            
             <!-- Accordion wrapper -->
-      </div>
+    
 
 
 
@@ -368,7 +394,7 @@
        <!--Weitere Wahlinfos-->
 
       <div id="wahlinfo" class="container tab-pane fade"><br>
-        <h3 class="font-weight-lighter">Weiterführende Informationen zu den Wahlen</h3><br>
+        <h3 class="font-weight-lighter">Weiterführende Informationen zu den Grossratswahlen</h3><br>
         
           <!--Accordion wrapper-->
           <div class="accordion md-accordion" id="accordionI" role="tablist" aria-multiselectable="true">
@@ -565,7 +591,7 @@
               <div id="collapseTwo3_3" class="collapse" role="tabpanel" aria-labelledby="headingTwo3_3"
                 data-parent="#accordionI">
                 <div class="card-body">
-                Der Wahlkreis Bettingen hat nur einen Sitz zu Gute. Da nur zwei Kandidaten zweier verschiedener Parteien zur Wahl
+                Der Wahlkreis Bettingen hat nur einen Sitz zugute. Da nur zwei Kandidaten zweier verschiedener Parteien zur Wahl
                 standen, gab es in diesem Wahlkreis keine Stimmen veränderter Wahlzettel.
                 </div>
               </div>

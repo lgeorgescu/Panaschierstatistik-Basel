@@ -1176,7 +1176,7 @@ function draw_sankey(params){
 	   
 	   
 	   //hard code these now but eventually make available
-	   var formatNumber = d3v3.format("0,.0f"),    // zero decimal places
+		var formatNumber = d3v3.format("0,.0f"),    // zero decimal places
 		   format = function(d) { return formatNumber(d) + units; },   
 		   color = d3v3.scale.category10();
 	   
